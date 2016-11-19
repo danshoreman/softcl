@@ -103,4 +103,4 @@ wp-content/plugins/*
 #===========================#
 wp-content/themes/*
 
-!wp-content/themes/softcl
+!wp-content/themes/softwarecloud
