@@ -1257,13 +1257,18 @@ LINK STYLES
 *********************/
 a, a:visited,
 .gen-link {
-  color: #40859b;
+  color: #e65d33;
   text-decoration: underline;
 }
 
 a:hover, a:visited:hover,
 .gen-link:hover {
   text-decoration: none;
+}
+
+.btn {
+  padding: 1rem;
+  display: inline-block;
 }
 
 /******************************************************************
@@ -1697,7 +1702,42 @@ h5, .h5 {
   }
 }
 
-/* Base stuff here */
+.introduction {
+  background: #e65d33;
+  color: #ffffff;
+}
+
+.about-us {
+  background: #ecece7;
+}
+
+.about-us h3 {
+  color: #2d414f;
+}
+
+.raring {
+  background: #e1e1d9;
+  color: #2d414f;
+}
+
+.trust-panel h4 {
+  color: #e65d33;
+}
+
+.trust-panel .partner {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.trust-panel .partner .btn-more {
+  background: #2d414f;
+  color: #ffffff;
+}
+
+/* min-width 641px */
+/* min-width 769px */
+/* min-width 1025px */
+/* min-width 1441px */
 /*********************************************************************************
 Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
 *********************************************************************************/

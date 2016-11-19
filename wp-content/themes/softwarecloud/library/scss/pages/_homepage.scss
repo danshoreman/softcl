@@ -1,5 +1,39 @@
 
+.introduction{
+	background: $orange;
+	color: $white;
+}
 
+.about-us{
+	background: $beige;
+	
+	h3{
+		color: $header-intro;
+	}
+}
+
+.raring{
+	background: darken($beige, 5%);
+	
+	color: $header-intro;
+}
+
+.trust-panel{
+	
+	h4{
+		color: $orange;
+	}
+	
+	.partner{
+		text-align: center;
+		padding-bottom: 2rem;
+		
+		.btn-more{
+			background: $header-intro;
+			color: $white;
+		}
+	}
+}
 
 
 
