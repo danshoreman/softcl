@@ -42,7 +42,6 @@
 
 </head>
 <body <?php body_class(); ?>>
-	<?php /*
 	<header class="page-header">
 		<div class="row">
 			<div class="small-12 columns">
@@ -52,4 +51,3 @@
 			</div>
 		</div>
 	</header>
-	*/ ?>

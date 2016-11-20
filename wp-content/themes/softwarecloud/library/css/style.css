@@ -1240,6 +1240,7 @@ body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #343434;
+  position: relative;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1377,12 +1378,20 @@ h5, .h5 {
 /* min-width 1025px */
 /* min-width 1441px */
 /* header */
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+}
+
 .page-header .main-logo {
   display: inline-block;
 }
 
 .page-header .main-logo img {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
@@ -1811,13 +1820,13 @@ h5, .h5 {
 }
 
 .carousel {
-  height: 450px;
+  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  padding-top: 5rem;
+  padding-top: 7rem;
   padding-left: 1rem;
 }
 

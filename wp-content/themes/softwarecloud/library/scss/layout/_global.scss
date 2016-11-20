@@ -9,6 +9,7 @@ html{
 body {
 	@include body-font;
 	color: $grey;
+	position: relative;
 	-webkit-font-smoothing: antialiased;
 }
 
