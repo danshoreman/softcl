@@ -14,7 +14,7 @@ form{
 	textarea{
 		border: 1px solid $border;
 		padding: 0.8rem;
-		font-family: $body-font;
+		@include body-font;
 		@include border-radius(3px);
 	}
 	
@@ -22,7 +22,7 @@ form{
 	#searchsubmit{
 		border: none;
 		padding: 0.8rem 1.5rem;
-		font-family: $body-font;
+		@include body-font;
 		color: $white;
 		background: lighten($bgrey, 20%);
 		@include border-radius(0);

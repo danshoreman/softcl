@@ -59,8 +59,15 @@ $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 
 // Change these to your own
-$header-font:       'Lato', $sans-serif;
-$body-font:		      'Lato', $sans-serif;
+@mixin header-font{       
+	font-family: 'museo-sans', $sans-serif;
+	font-weight: 900;
+}
+
+@mixin body-font{ 
+	font-family:	'proxima-nova', $sans-serif;
+	font-weight: 400;
+}
 
 
 /*******************************

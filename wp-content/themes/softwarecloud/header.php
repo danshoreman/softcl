@@ -25,6 +25,9 @@
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+<script src="https://use.typekit.net/ppc4xjg.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/min/rem.min.js"></script>
