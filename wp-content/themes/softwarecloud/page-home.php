@@ -123,32 +123,32 @@
 		<div class="small-12 columns">
 			<h4>Stuff we trust. Because it works.</h4>
 			
-			<div class="row">
-				<div class="small-12 large-fifth columns partner">
+			<div class="partner-panel">
+				<div class="partner">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="small-12 large-fifth columns partner">
+				<div class="partner">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="small-12 large-fifth columns partner">
+				<div class="partner">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="small-12 large-fifth columns partner">
+				<div class="partner">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="small-12 large-fifth columns partner">
+				<div class="partner">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>

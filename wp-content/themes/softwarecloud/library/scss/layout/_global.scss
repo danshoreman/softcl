@@ -8,7 +8,7 @@ html{
 
 body {
 	@include body-font;
-	color: $grey;
+	color: $text;
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 }
@@ -35,7 +35,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 p{
-	line-height: 1.3;
+	line-height: 1.2;
 }
 
 /*********************
