@@ -1,24 +1,18 @@
 <?php get_header(); ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); 
+	
+	$image_id = get_post_thumbnail_id(); 
+	$image_url = wp_get_attachment_image_src($image_id,'full'); 
+	
+?>
 
-<section class="carousel">
-	
-	<?php if ( has_post_thumbnail()) : ?>
-						
-		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="post-thumbnail">
-		
-			<?php the_post_thumbnail(); ?>
-		
-		</a>
-	
-	<?php endif; ?>
-	
+<section class="carousel" <?php if($image_url) : ?> style="background-image: url(<?php echo $image_url[0]; ?>);" <?php endif; ?>>
 	<div class="row">
 		<div class="small-12 columns">
 			<h1>
-				<span class="">Things we love #39867:</span><br>
-				Making your<br>big IT ideas work.
+				<span class="disclaimer">Things we love #39867:</span><br>
+				Making your <br>big IT ideas work.
 			</h1>
 		</div>
 	</div>

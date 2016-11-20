@@ -1,4 +1,30 @@
 
+.carousel{
+	height: 450px;
+	@include back-size(cover);
+	background-position: center center;
+	padding-top: 5rem;
+	padding-left: 1rem;
+	
+	h1{
+		color: $orange;
+		font-size: 2.8rem;
+		line-height: 1.2;
+		width: 80%;
+		
+		.disclaimer{
+			@include body-font;
+			font-size: 1rem;
+			display: block;
+		}
+		
+		br{
+			display: none;
+		}
+	}
+}
+
+
 .introduction{
 	background: $orange;
 	color: $white;
