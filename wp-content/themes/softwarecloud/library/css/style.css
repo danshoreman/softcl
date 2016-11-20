@@ -1249,6 +1249,10 @@ a img {
   border: none;
 }
 
+.row {
+  max-width: 72.5rem;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -2139,7 +2143,45 @@ h5, .h5 {
   -o-background-size: cover;
   background-size: cover;
   z-index: 1;
-  fill: blue;
+}
+
+@media only screen and (min-width: 500px) {
+  .trust-panel:before {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+  .trust-panel h4 {
+    margin-bottom: 2rem;
+  }
+  .trust-panel:before {
+    top: -60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+  .trust-panel h4 {
+    margin-bottom: 2rem;
+  }
+  .trust-panel:before {
+    top: -80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .trust-panel h4 {
+    font-size: 2rem;
+  }
+  .trust-panel:before {
+    top: -100px;
+    height: 100px;
+  }
 }
 
 /* min-width 641px */

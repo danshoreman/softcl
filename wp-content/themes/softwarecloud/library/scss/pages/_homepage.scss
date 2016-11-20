@@ -180,7 +180,50 @@
 		background-repeat: repeat-x;
 		@include back-size(cover);
 		z-index: 1;
-		fill: blue;
+	}
+	
+	
+	@media only screen and (min-width: 500px) {
+		
+		&:before{
+			@include back-size(contain);
+		}
+	}
+	
+	@media only screen and (min-width: 670px) {
+		
+		h4{
+			margin-bottom: 2rem;
+		}
+		
+		&:before{
+			top: -60px;	
+			height: 60px;
+		}
+	}
+	
+	@media only screen and (min-width: 670px) {
+		
+		h4{
+			margin-bottom: 2rem;
+		}
+		
+		&:before{
+			top: -80px;	
+			height: 80px;
+		}
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+		
+		h4{
+			font-size: 2rem;
+		}
+		
+		&:before{
+			top: -100px;	
+			height: 100px;
+		}
 	}
 }
 
