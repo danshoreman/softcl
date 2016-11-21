@@ -1,5 +1,7 @@
 
-
+.page-footer{
+	text-align: center;
+}
 
 
 
@@ -12,6 +14,28 @@
 /* min-width 769px */
 @media only screen and (min-width: 48.063em) {
 	
+	.page-footer{
+		text-align: inherit;
+		
+		.foot-inner{
+			border-top: 1px solid $lgrey;
+			padding: 1rem 0;
+			
+			.copyright{
+				float: left;
+			}
+			
+			.extras{
+				float: right;
+			}
+			
+			&:after{
+				content: '';
+				display: table;
+				clear: both;
+			}
+		}
+	}
 }
 
 /* min-width 1025px */

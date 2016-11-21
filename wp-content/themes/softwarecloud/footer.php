@@ -1,9 +1,11 @@
 <footer class="page-footer" role="contentinfo">
 	<div class="row">
 		<div class="small-12 columns">
-			<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-			
-			<p><a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a></p>
+			<div class="foot-inner">
+				<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+				
+				<p class="extras"><a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a></p>
+			</div>
 		</div>
 	</div>
 </footer>
