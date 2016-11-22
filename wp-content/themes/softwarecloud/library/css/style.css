@@ -2203,10 +2203,33 @@ h5, .h5 {
 
 .about-us {
   background: #ecece7;
+  padding: 1rem 0;
 }
 
 .about-us h3 {
   color: #2d414f;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+}
+
+.about-us .experts-list {
+  margin: 0 0 0 0.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-us .experts-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  background: url(../images/general/checkmark.svg) left top no-repeat;
+  background-size: 35px;
 }
 
 .raring {

@@ -50,7 +50,7 @@
 				</div>
 				<div class="small-12 columns">
 					<p>Talk to us about:</p>
-					<ul>
+					<ul class="experts-list">
 						<li>Microsoft Cloud migration Strategy and execution</li>
 						<li>Keeping your data safe and compliant</li>
 						<li>Replacing old hardware with virtual desktops</li>
