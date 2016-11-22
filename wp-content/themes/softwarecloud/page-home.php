@@ -41,43 +41,46 @@
 	
 	<div class="row">
 		<div class="small-12 columns">
-			
-			<h3>We're Experts</h3>
-			
-			<div class="row">
-				<div class="small-12 columns">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
-				</div>
-				<div class="small-12 columns">
-					<p>Talk to us about:</p>
-					<ul class="experts-list">
-						<li>Microsoft Cloud migration Strategy and execution</li>
-						<li>Keeping your data safe and compliant</li>
-						<li>Replacing old hardware with virtual desktops</li>
-						<li>Special projects advisory, delivery & support</li>
-						<li>Making your IT support work better and making you happier</li>
-					</ul>
-				</div>
-			</div>			
+			<div class="experts-block">
+				<h3>We're Experts</h3>
+				
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
+					</div>
+					<div class="small-12 medium-6 columns">
+						<p>Talk to us about:</p>
+						<ul class="experts-list">
+							<li>Microsoft Cloud migration Strategy and execution</li>
+							<li>Keeping your data safe and compliant</li>
+							<li>Replacing old hardware with virtual desktops</li>
+							<li>Special projects advisory, delivery & support</li>
+							<li>Making your IT support work better and making you happier</li>
+						</ul>
+					</div>
+				</div>	
+			</div>		
 		</div>
 	</div>
 	
 	
 	<div class="row">
 		<div class="small-12 columns">
+			<div class="friendly-block">
+				<h3>We're Friendly</h3>
 			
-			<h3>We're Friendly</h3>
-			
-			<div class="row">
-				<div class="small-12 columns">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
-				</div>
-				<div class="small-12 columns">
-					<p>It might be our decades of experience in IT efficiency that gets us to the table, but it's our personality that keeps us there.</p>
-
-					<p>If you don’t succeed, we don’t.</p>
-
-					<p>We're not guns for hire, we're part of your team.</p>
+				<div class="row">
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
+					</div>
+					<div class="small-12 medium-6 medium-pull-6 columns">
+						<p>It might be our decades of experience in IT efficiency that gets us to the table, but it's our personality that keeps us there.</p>
+	
+						<p>If you don’t succeed, we don’t.</p>
+	
+						<p>We're not guns for hire, we're part of your team.</p>
+						
+					</div>
 				</div>
 			</div>			
 		</div>
@@ -85,19 +88,20 @@
 	
 	<div class="row">
 		<div class="small-12 columns">
+			<div class="legal-block">
+				<h3>We're Legal Eagles</h3>
 			
-			<h3>We're Legal Eagles</h3>
-			
-			<div class="row">
-				<div class="small-12 columns">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
-				</div>
-				<div class="small-12 columns">
-					<p>Extensive experience with some of the UK's biggest law firms makes us the place to turn for data compliance, case management, and Visualfiles development.</p>
-					
-					<p>It also makes us the first door you should be knocking on.</p>
-				</div>
-			</div>			
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
+					</div>
+					<div class="small-12 medium-6 columns">
+						<p>Extensive experience with some of the UK's biggest law firms makes us the place to turn for data compliance, case management, and Visualfiles development.</p>
+						
+						<p>It also makes us the first door you should be knocking on.</p>
+					</div>
+				</div>		
+			</div>	
 		</div>
 	</div>
 </section>
