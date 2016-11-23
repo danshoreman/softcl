@@ -1,72 +1,115 @@
 
 .carousel{
-	height: 500px;
-	@include back-size(cover);
-	background-position: center center;
-	padding-top: 7rem;
-	padding-left: 1rem;
-	
-	h1{
-		color: $orange;
-		font-size: 2.8rem;
-		line-height: 1.2;
-		width: 265px;
+
+	.carousel-slide{
+		height: 500px;		
 		
-		.disclaimer{
-			@include body-font;
-			font-size: 1rem;
-			display: block;
-		}
-		
-		br{
-			display: none;
-		}
-	}
-	
-	@media only screen and (min-width: 40.063em) {
-		
-		height: 550px;
-		
-		h1{
-			width: 400px;
-		}
-	}
-	
-	@media only screen and (min-width: 48.063em) {
-		
-		height: 600px;
-		
-		h1{
-			font-size: 3.4rem;
-			width: 480px;
-		}
-	}
-	
-	@media only screen and (min-width: 64.063em) {
-		
-		height: 700px;
-		
-		h1{
-			font-size: 3.4rem;
-			width: 480px;
-			position: absolute;
-			left: 40%;
-			top: 50px;
-		}
-	}
-	
-	@media only screen and (min-width: 90.063em) {
-		
-		height: 850px;
-		
-		h1{
-			font-size: 4rem;
-			width: 550px;
-			left: 40%;
-			top: 120px;
+		.carousel-inner{
+			height: 500px;
+			@include back-size(cover);
+			background-position: center center;
+			padding-top: 7rem;
+			padding-left: 1rem;
 			
-			.disclaimer{
-				font-size: 1.2rem;
+			h1{
+				color: $orange;
+				font-size: 2.8rem;
+				line-height: 1.2;
+				width: 265px;
+				
+				.disclaimer{
+					@include body-font;
+					font-size: 1rem;
+					display: block;
+				}
+				
+				br{
+					display: none;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 40.063em) {
+			
+			height: 550px;
+			
+			.carousel-inner{
+				height: 550px;
+			
+				h1{
+					width: 400px;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 48.063em) {
+			
+			height: 600px;
+			
+			.carousel-inner{
+				height: 600px;
+			
+				h1{
+					font-size: 3.4rem;
+					width: 480px;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 64.063em) {
+			
+			height: 700px;
+			
+			.carousel-inner{
+				height: 700px;
+			
+				h1{
+					font-size: 3.4rem;
+					width: 480px;
+					position: absolute;
+					left: 40%;
+					top: 50px;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 90.063em) {
+			
+			height: 850px;
+			
+			.carousel-inner{
+				height: 850px;
+			
+				h1{
+					font-size: 4rem;
+					width: 550px;
+					left: 40%;
+					top: 120px;
+					
+					.disclaimer{
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+		
+	}
+	
+	.slick-dots{
+		bottom: 70px;
+		z-index: 2;
+		
+		li{
+			
+			button{
+				background: $orange;
+			}
+			
+			&.slick-active{
+				
+				button{
+					background: darken($orange, 20%);
+				}
 			}
 		}
 	}
@@ -292,6 +335,42 @@
 		.legal-block{
 			padding: 1rem 0;
 		}
+		
+		.experts-block{
+			position: relative;
+			
+			@media only screen and (min-width: 64.063em) {
+			
+				&:after{
+					content: '';
+					position: absolute;
+					bottom: -90px;
+					left: 50%;
+					margin-left: -60px;
+					width: 120px;
+					height: 120px;
+					background: url(../images/home/arrow.svg) center bottom no-repeat;
+				}
+			}
+		}
+		
+		.friendly-block{
+			position: relative;
+			
+			@media only screen and (min-width: 64.063em) {
+			
+				&:after{
+					content: '';
+					position: absolute;
+					bottom: -90px;
+					left: 50%;
+					margin-left: -60px;
+					width: 120px;
+					height: 120px;
+					background: url(../images/home/arrow2.svg) center bottom no-repeat;
+				}
+			}
+		}
 	}
 	
 	@media only screen and (min-width: 64.063em) {
@@ -380,9 +459,14 @@
 	
 	
 	.partner-wrap{
-		background: darken($beige, 10%);
+		background: darken($beige, 8%);
 		padding-bottom: 70px;
 		margin-top: 50px;
+		
+		h3{
+			font-size: 1.6rem;
+			text-align: center;
+		}
 	
 		.partner-panel{
 			

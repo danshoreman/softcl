@@ -12,6 +12,16 @@
 		});
 */
 		
+		$('.carousel').slick({
+	    dots: true,
+		  infinite: true,
+		  speed: 500,
+		  fade: false,
+		  arrows: false,
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+	  });
+		
 		$('.partner-panel').slick({
 	    dots: false,
 		  infinite: true,
@@ -41,9 +51,6 @@
 		        dots: true
 		      }
 		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
 		  ]
 	  });
 		
@@ -77,9 +84,6 @@
 		        dots: true
 		      }
 		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
 		  ]
 	  });
 		

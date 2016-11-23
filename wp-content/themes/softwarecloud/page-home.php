@@ -7,13 +7,29 @@
 	
 ?>
 
-<section class="carousel" <?php if($image_url) : ?> style="background-image: url(<?php echo $image_url[0]; ?>);" <?php endif; ?>>
-	<div class="row">
-		<div class="small-12 columns">
-			<h1>
-				<span class="disclaimer">Things we love #39867:</span><br>
-				Making your <br>big IT ideas work.
-			</h1>
+<section class="carousel">
+	<div class="carousel-slide">
+		<div class="carousel-inner" <?php if($image_url) : ?> style="background-image: url(<?php echo $image_url[0]; ?>);" <?php endif; ?>>
+			<div class="row">
+				<div class="small-12 columns">
+					<h1>
+						<span class="disclaimer">Things we love #39867:</span><br>
+						Making your <br>big IT ideas work.
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="carousel-slide">
+		<div class="carousel-inner" <?php if($image_url) : ?> style="background-image: url(<?php echo $image_url[0]; ?>);" <?php endif; ?>>
+			<div class="row">
+			<div class="small-12 columns">
+				<h1>
+					<span class="disclaimer">Things we love #39867:</span><br>
+					Making your <br>big IT ideas work.
+				</h1>
+			</div>
+		</div>
 		</div>
 	</div>
 </section>

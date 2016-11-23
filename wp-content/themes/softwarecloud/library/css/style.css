@@ -1525,6 +1525,7 @@ h5, .h5 {
   left: 0;
   width: 100%;
   padding: 1rem 0 1rem 1rem;
+  z-index: 1;
 }
 
 .page-header .main-logo {
@@ -2112,7 +2113,11 @@ h5, .h5 {
   background: #939392;
 }
 
-.carousel {
+.carousel .carousel-slide {
+  height: 500px;
+}
+
+.carousel .carousel-slide .carousel-inner {
   height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2123,48 +2128,57 @@ h5, .h5 {
   padding-left: 1rem;
 }
 
-.carousel h1 {
+.carousel .carousel-slide .carousel-inner h1 {
   color: #e65d33;
   font-size: 2.8rem;
   line-height: 1.2;
   width: 265px;
 }
 
-.carousel h1 .disclaimer {
+.carousel .carousel-slide .carousel-inner h1 .disclaimer {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   display: block;
 }
 
-.carousel h1 br {
+.carousel .carousel-slide .carousel-inner h1 br {
   display: none;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .carousel {
+  .carousel .carousel-slide {
     height: 550px;
   }
-  .carousel h1 {
+  .carousel .carousel-slide .carousel-inner {
+    height: 550px;
+  }
+  .carousel .carousel-slide .carousel-inner h1 {
     width: 400px;
   }
 }
 
 @media only screen and (min-width: 48.063em) {
-  .carousel {
+  .carousel .carousel-slide {
     height: 600px;
   }
-  .carousel h1 {
+  .carousel .carousel-slide .carousel-inner {
+    height: 600px;
+  }
+  .carousel .carousel-slide .carousel-inner h1 {
     font-size: 3.4rem;
     width: 480px;
   }
 }
 
 @media only screen and (min-width: 64.063em) {
-  .carousel {
+  .carousel .carousel-slide {
     height: 700px;
   }
-  .carousel h1 {
+  .carousel .carousel-slide .carousel-inner {
+    height: 700px;
+  }
+  .carousel .carousel-slide .carousel-inner h1 {
     font-size: 3.4rem;
     width: 480px;
     position: absolute;
@@ -2174,18 +2188,34 @@ h5, .h5 {
 }
 
 @media only screen and (min-width: 90.063em) {
-  .carousel {
+  .carousel .carousel-slide {
     height: 850px;
   }
-  .carousel h1 {
+  .carousel .carousel-slide .carousel-inner {
+    height: 850px;
+  }
+  .carousel .carousel-slide .carousel-inner h1 {
     font-size: 4rem;
     width: 550px;
     left: 40%;
     top: 120px;
   }
-  .carousel h1 .disclaimer {
+  .carousel .carousel-slide .carousel-inner h1 .disclaimer {
     font-size: 1.2rem;
   }
+}
+
+.carousel .slick-dots {
+  bottom: 70px;
+  z-index: 2;
+}
+
+.carousel .slick-dots li button {
+  background: #e65d33;
+}
+
+.carousel .slick-dots li.slick-active button {
+  background: #9f3414;
 }
 
 .introduction {
@@ -2406,6 +2436,41 @@ h5, .h5 {
   .about-us .legal-block {
     padding: 1rem 0;
   }
+  .about-us .experts-block {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 48.063em) and (min-width: 64.063em) {
+  .about-us .experts-block:after {
+    content: '';
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    height: 120px;
+    background: url(../images/home/arrow.svg) center bottom no-repeat;
+  }
+}
+
+@media only screen and (min-width: 48.063em) {
+  .about-us .friendly-block {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 48.063em) and (min-width: 64.063em) {
+  .about-us .friendly-block:after {
+    content: '';
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    height: 120px;
+    background: url(../images/home/arrow2.svg) center bottom no-repeat;
+  }
 }
 
 @media only screen and (min-width: 64.063em) {
@@ -2483,9 +2548,14 @@ h5, .h5 {
 }
 
 .raring .partner-wrap {
-  background: #d5d5cb;
+  background: #dadad0;
   padding-bottom: 70px;
   margin-top: 50px;
+}
+
+.raring .partner-wrap h3 {
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .raring .partner-wrap .partner-panel .partner {
