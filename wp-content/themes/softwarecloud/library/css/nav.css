@@ -1,53 +1,3 @@
-
-.main-menu{
-	display: none;
-}
-
-#trigger-overlay{
-	display: block;
-	cursor: pointer;
-	width: 3rem;
-	height: 3rem;
-	line-height: 3rem;
-	padding: 0 1rem;
-	position: relative;
-	color: $lgrey;
-	float: right;
-}
-
-#trigger-overlay span:after,
-#trigger-overlay span:before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -9px;
-}
-
-#trigger-overlay span:after{
-	top: 9px;
-}
-
-#trigger-overlay span{
-  position: absolute;
-  display: block;
-  top: 22px;
-  left: 9px;
-}
-
-#trigger-overlay span,
-#trigger-overlay span:after,
-#trigger-overlay span:before {
-  width: 30px;
-  height: 5px;
-  background-color: $orange;
-  backface-visibility: hidden;
-  @include border-radius(2px);
-}
-
-
-
-
-
 /* Overlay style */
 .overlay {
 	position: fixed;
@@ -55,7 +5,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(230,93,51,0.9);
+	background: rgba(153,204,51,0.9);
 	z-index: 1;
 }
 
@@ -68,7 +18,7 @@
 	top: 20px;
 	overflow: hidden;
 	border: none;
-	background: url(../images/general/cross.png) no-repeat center center;
+	background: url(../img/cross.png) no-repeat center center;
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
@@ -81,19 +31,9 @@
 	position: relative;
 	top: 50%;
 	height: 60%;
-	font-size: 28px;
+	font-size: 54px;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	
-	@media only screen and (min-width: 40.063em) {
-	
-		font-size: 40px;
-	}
-	
-	@media only screen and (min-width: 48.063em) {
-		
-		font-size: 46px;
-	}
 }
 
 .overlay ul {
@@ -107,23 +47,22 @@
 
 .overlay ul li {
 	display: block;
-	height: 12%;
-	height: calc(100% / 8);
+	height: 20%;
+	height: calc(100% / 5);
 	min-height: 54px;
 }
 
 .overlay ul li a {
-	@include header-font;
+	font-weight: 300;
 	display: block;
 	color: #fff;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-	text-decoration: none;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: #e7cec6;
+	color: #e3fcb1;
 }
 
 /* Effects */
@@ -173,32 +112,4 @@
 	.overlay ul li {
 		min-height: 34px;
 	}
-}
-
-
-
-
-
-/* min-width 641px */
-@media only screen and (min-width: 40.063em) {
-
-}
-
-/* min-width 769px */
-@media only screen and (min-width: 48.063em) {
-	
-}
-
-/* min-width 1025px */
-@media only screen and (min-width: 64.063em) {
-	
-	#trigger-overlay span{
-  	top: 32px;
-		left: 0;
-  }
-}
-
-/* min-width 1441px */
-@media only screen and (min-width: 90.063em) {
-	
 }

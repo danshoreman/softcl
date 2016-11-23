@@ -6,9 +6,11 @@
 		
 		// Nav
 		// Show and hide main nav on mobile
+/*
 		$('#toggle').click(function(){
 			$('.main-menu').slideToggle('fast');
 		});
+*/
 		
 		$('.partner-panel').slick({
 	    dots: false,

@@ -258,8 +258,54 @@
 		}
 	}
 	
-	.experts-block{
+	@media only screen and (min-width: 48.063em) {
 		
+		h3{
+			font-size: 2.8rem;
+			margin-bottom: 2rem;
+		}
+		
+		p{
+			padding-left: 0;
+			margin-left: 0;
+		}
+		
+		img{
+			margin: inherit;
+		}
+		
+		.img-col{
+			text-align: right;
+			
+			img{
+				display: inline;
+				max-width: 500px;
+			}	
+			
+			&.img-alt{
+				text-align: left;
+			}
+		}
+		
+		.experts-block,
+		.friendly-block,
+		.legal-block{
+			padding: 1rem 0;
+		}
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+	
+		h3{
+			font-size: 4rem;
+			margin-bottom: 2rem;
+		}
+		
+		.experts-block,
+		.friendly-block,
+		.legal-block{
+			padding: 2rem 0;
+		}
 	}
 	
 	.friendly-block{
@@ -267,6 +313,8 @@
 		@media only screen and (min-width: 40.063em) {
 			
 			p{
+				margin-left: auto;
+				margin-right: 0;
 				text-align: right;
 			}
 		}
@@ -274,30 +322,67 @@
 	
 	.legal-block{
 		
-		
+		margin-bottom: 6rem;
 	}
 }
 
 .raring{
 	background: darken($beige, 5%);
-	
 	color: $header-intro;
-}
-
-.trust-panel{
+	padding-bottom: 70px;
 	
-	h4{
-		color: $orange;
+	h3{
+		font-size: 2.2rem;
+		text-align: center;
+		margin-bottom: 1rem;
 	}
 	
-	.partner{
-		text-align: center;
-		padding-bottom: 2rem;
+	p{
+		font-size: 1.3rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-bottom: 1.5rem;
 		
-		.btn-more{
-			background: $header-intro;
-			color: $white;
+		&.lg-text{
+			font-size: 1.5rem;
 		}
+		
+		&.call-us{
+			@include header-font;
+			text-align: center;
+		}
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		padding-bottom: 90px;
+		
+		h3,p, p.call-us{
+			text-align: left;
+			padding-left: 0;
+			max-width: 550px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+		padding-bottom: 110px;
+		
+		h3{
+			font-size: 3.2rem;
+		}
+		
+		p{
+			font-size: 1.3rem;
+			
+			&.lg-text{
+				font-size: 2rem;
+			}
+		}
+	}
+	
+	@media only screen and (min-width: 90.063em) {
+		padding-bottom: 130px;
 	}
 }
 
@@ -318,6 +403,8 @@
 		
 		.partner{
 			padding: 2rem 2rem 0 2rem;
+			text-align: center;
+			padding-bottom: 2rem;
 			
 			img{
 				display: inline-block;
@@ -327,6 +414,11 @@
 				max-width: 200px;
 				margin-left: auto;
 				margin-right: auto;
+			}
+			
+			.btn-more{
+				background: $header-intro;
+				color: $white;
 			}
 		}
 		

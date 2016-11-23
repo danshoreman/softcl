@@ -45,7 +45,7 @@
 				<h3>We're Experts</h3>
 				
 				<div class="row">
-					<div class="small-12 medium-6 columns">
+					<div class="small-12 medium-6 columns img-col">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
 					</div>
 					<div class="small-12 medium-6 columns">
@@ -70,7 +70,7 @@
 				<h3>We're Friendly</h3>
 			
 				<div class="row">
-					<div class="small-12 medium-6 medium-push-6 columns">
+					<div class="small-12 medium-6 medium-push-6 columns img-col img-alt">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
 					</div>
 					<div class="small-12 medium-6 medium-pull-6 columns">
@@ -92,7 +92,7 @@
 				<h3>We're Legal Eagles</h3>
 			
 				<div class="row">
-					<div class="small-12 medium-6 columns">
+					<div class="small-12 medium-6 columns img-col">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/staff.png" alt="" class="">
 					</div>
 					<div class="small-12 medium-6 columns">
@@ -108,18 +108,18 @@
 
 <section class="raring">
 	<div class="row">
-		<div class="small-12 columns">
+		<div class="small-12 medium-8 medium-offset-2 columns">
 			<h3>We're raring to go.</h3>
 			
 			<p>You won’t find out everything you need to know about us from reading a web page.</p>
 			
 			<p>This information is for every Tom, Dick and Harry.</p>
 			
-			<p>We want to talk about you.</p>
+			<p class="lg-text">We want to talk about you.</p>
 			
 			<p>Specifically how we can do some great stuff for your business.</p>
 			
-			<p>Call us on 0808 164 0000 and see what we can do.</p>
+			<p class="call-us">Call us on 0808 164 0000 and see what we can do.</p>
 		</div>
 	</div>
 </section>
