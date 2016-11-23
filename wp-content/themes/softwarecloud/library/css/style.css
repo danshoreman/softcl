@@ -2435,7 +2435,6 @@ h5, .h5 {
 .raring {
   background: #e1e1d9;
   color: #2d414f;
-  padding-bottom: 70px;
 }
 
 .raring h3 {
@@ -2462,9 +2461,6 @@ h5, .h5 {
 }
 
 @media only screen and (min-width: 48.063em) {
-  .raring {
-    padding-bottom: 90px;
-  }
   .raring h3, .raring p, .raring p.call-us {
     text-align: left;
     padding-left: 0;
@@ -2475,9 +2471,6 @@ h5, .h5 {
 }
 
 @media only screen and (min-width: 64.063em) {
-  .raring {
-    padding-bottom: 110px;
-  }
   .raring h3 {
     font-size: 3.2rem;
   }
@@ -2489,9 +2482,71 @@ h5, .h5 {
   }
 }
 
+.raring .partner-wrap {
+  background: #d5d5cb;
+  padding-bottom: 70px;
+  margin-top: 50px;
+}
+
+.raring .partner-wrap .partner-panel .partner {
+  padding: 1rem;
+}
+
+.raring .partner-wrap .partner-panel .slick-arrow {
+  width: 30px;
+  height: 50px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.raring .partner-wrap .partner-panel .slick-arrow.slick-prev {
+  background: url(../images/general/left-arrow.svg) center center no-repeat #bfbfae;
+  background-size: 10px;
+  left: 0;
+}
+
+.raring .partner-wrap .partner-panel .slick-arrow.slick-next {
+  background: url(../images/general/right-arrow.svg) center center no-repeat #bfbfae;
+  right: 0;
+  background-size: 10px;
+}
+
+.raring .partner-wrap .partner-panel .slick-dots {
+  bottom: -35px;
+}
+
+@media only screen and (min-width: 480px) {
+  .raring .partner-wrap .partner-panel .slick-arrow.slick-prev {
+    left: -15px;
+  }
+  .raring .partner-wrap .partner-panel .slick-arrow.slick-next {
+    right: -15px;
+  }
+}
+
+@media only screen and (min-width: 48.063em) {
+  .raring .partner-wrap {
+    padding-bottom: 90px;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .raring .partner-wrap {
+    padding-bottom: 110px;
+  }
+}
+
 @media only screen and (min-width: 90.063em) {
-  .raring {
-    padding-bottom: 130px;
+  .raring .partner-wrap {
+    padding-bottom: 150px;
+  }
+  .raring .partner-wrap .partner-panel .slick-arrow.slick-prev {
+    left: -30px;
+  }
+  .raring .partner-wrap .partner-panel .slick-arrow.slick-next {
+    right: -30px;
   }
 }
 
@@ -2509,29 +2564,29 @@ h5, .h5 {
   margin: auto;
 }
 
-.trust-panel .partner-panel .partner {
+.trust-panel .tools-panel .tool {
   padding: 2rem 2rem 0 2rem;
   text-align: center;
   padding-bottom: 2rem;
 }
 
-.trust-panel .partner-panel .partner img {
+.trust-panel .tools-panel .tool img {
   display: inline-block;
 }
 
-.trust-panel .partner-panel .partner p {
+.trust-panel .tools-panel .tool p {
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.trust-panel .partner-panel .partner .btn-more {
+.trust-panel .tools-panel .tool .btn-more {
   background: #2d414f;
   color: #ffffff;
 }
 
-.trust-panel .partner-panel .slick-prev,
-.trust-panel .partner-panel .slick-next {
+.trust-panel .tools-panel .slick-prev,
+.trust-panel .tools-panel .slick-next {
   background: #bbc2c6;
   width: 30px;
   height: 80px;
@@ -2540,7 +2595,7 @@ h5, .h5 {
   border-radius: 0;
 }
 
-.trust-panel .partner-panel .slick-prev {
+.trust-panel .tools-panel .slick-prev {
   left: -15px;
   background-image: url(../images/general/left-arrow.svg);
   background-position: center center;
@@ -2551,7 +2606,7 @@ h5, .h5 {
   background-size: 10px;
 }
 
-.trust-panel .partner-panel .slick-next {
+.trust-panel .tools-panel .slick-next {
   right: -15px;
   background-image: url(../images/general/right-arrow.svg);
   background-position: center center;
@@ -2602,7 +2657,7 @@ h5, .h5 {
   .trust-panel h4 {
     font-size: 2rem;
   }
-  .trust-panel .partner-panel .partner p {
+  .trust-panel .tools-panel .tool p {
     margin: 2rem 0;
   }
   .trust-panel:before {
@@ -2615,7 +2670,7 @@ h5, .h5 {
   .trust-panel h4 {
     font-size: 2.4rem;
   }
-  .trust-panel .partner-panel .partner {
+  .trust-panel .tools-panel .tool {
     padding: 2rem 1rem 0 1rem;
   }
   .trust-panel:before {

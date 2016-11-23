@@ -122,6 +122,37 @@
 			<p class="call-us">Call us on 0808 164 0000 and see what we can do.</p>
 		</div>
 	</div>
+	
+	<div class="partner-wrap">
+		<div class="row">
+			<div class="small-12 columns">
+				<h3>Those who trust in us.</h3>
+				<div class="partner-panel">
+					<div class="partner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+					</div>
+					<div class="partner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="trust-panel">
@@ -129,32 +160,32 @@
 		<div class="small-12 columns">
 			<h4>Stuff we trust. Because it works.</h4>
 			
-			<div class="partner-panel">
-				<div class="partner">
+			<div class="tools-panel">
+				<div class="tool">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="partner">
+				<div class="tool">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="partner">
+				<div class="tool">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="partner">
+				<div class="tool">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
 					<button class="btn btn-more">Read More</button>
 				</div>
-				<div class="partner">
+				<div class="tool">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>

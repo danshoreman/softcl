@@ -329,7 +329,6 @@
 .raring{
 	background: darken($beige, 5%);
 	color: $header-intro;
-	padding-bottom: 70px;
 	
 	h3{
 		font-size: 2.2rem;
@@ -354,7 +353,6 @@
 	}
 	
 	@media only screen and (min-width: 48.063em) {
-		padding-bottom: 90px;
 		
 		h3,p, p.call-us{
 			text-align: left;
@@ -366,7 +364,6 @@
 	}
 	
 	@media only screen and (min-width: 64.063em) {
-		padding-bottom: 110px;
 		
 		h3{
 			font-size: 3.2rem;
@@ -381,8 +378,79 @@
 		}
 	}
 	
-	@media only screen and (min-width: 90.063em) {
-		padding-bottom: 130px;
+	
+	.partner-wrap{
+		background: darken($beige, 10%);
+		padding-bottom: 70px;
+		margin-top: 50px;
+	
+		.partner-panel{
+			
+			.partner{
+				padding: 1rem;
+			}
+			
+			.slick-arrow{
+				width: 30px;
+				height: 50px;
+				@include border-radius(0);
+				z-index: 1;
+				
+				&.slick-prev{
+					background: url(../images/general/left-arrow.svg) center center no-repeat darken($beige, 20%);
+					background-size: 10px;
+					left: 0;
+				}
+				&.slick-next{
+					background: url(../images/general/right-arrow.svg) center center no-repeat darken($beige, 20%);
+					right: 0;
+					background-size: 10px;
+				}
+			}
+			
+			.slick-dots{
+				bottom: -35px;
+			}
+		}
+		
+		@media only screen and (min-width: 480px) {
+			
+			.partner-panel{
+				
+				.slick-arrow{
+					
+					&.slick-prev{
+						left: -15px;
+					}
+					&.slick-next{
+						right: -15px;
+					}
+				}
+			}
+		}
+		
+		@media only screen and (min-width: 48.063em) {
+			padding-bottom: 90px;
+		}
+		@media only screen and (min-width: 64.063em) {
+			padding-bottom: 110px;
+		}
+		@media only screen and (min-width: 90.063em) {
+			padding-bottom: 150px;
+			
+			.partner-panel{
+				
+				.slick-arrow{
+					
+					&.slick-prev{
+						left: -30px;
+					}
+					&.slick-next{
+						right: -30px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -399,9 +467,9 @@
 		margin: auto;
 	}
 	
-	.partner-panel{
+	.tools-panel{
 		
-		.partner{
+		.tool{
 			padding: 2rem 2rem 0 2rem;
 			text-align: center;
 			padding-bottom: 2rem;
@@ -487,9 +555,9 @@
 			font-size: 2rem;
 		}
 		
-		.partner-panel{
+		.tools-panel{
 		
-			.partner{
+			.tool{
 			
 				p{
 					margin: 2rem 0;
@@ -509,9 +577,9 @@
 			font-size: 2.4rem;
 		}
 		
-		.partner-panel{
+		.tools-panel{
 		
-			.partner{
+			.tool{
 				padding: 2rem 1rem 0 1rem;				
 			}
 		}
