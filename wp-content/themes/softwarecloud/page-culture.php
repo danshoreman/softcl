@@ -10,6 +10,26 @@
 	
 	<?php include 'partials/two-col-img-txt.php'; ?>
 	
+	<div class="benefits-pane;">
+		<div class="row">
+			<div class="small-12 medium-6 columns">
+				<h4>Benefits<br>
+					aka good things for good people.</h4>
+			</div>
+			<div class="small-12 medium-6 columns">
+				<p>Here are just some of the great things you’ll get as part of our team:</p>
+				
+				<ul>
+					<li>Salary</li>
+					<li>Company socials</li>
+					<li>Dignity</li>
+					<li>Apples</li>
+					<li>Steak bake</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
 	<div class="contact-form">
 		<div class="row">
 			<div class="small-12 columns">
