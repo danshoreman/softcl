@@ -34,6 +34,7 @@ add_theme_support( 'menus' );
 /* Add image sizes */
 add_image_size( 'thumbnail', 200, 200, true );
 add_image_size( 'image', 700, 350, true );
+add_image_size( 'hero', 1100, 745, true );
 
 
 /* Register our sidebars and widgetized areas */

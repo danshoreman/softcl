@@ -10,22 +10,6 @@
 	</div>
 </footer>
 
-<div class="overlay overlay-hugeinc">
-	<button type="button" class="overlay-close">Close</button>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Culture</a></li>
-			<li><a href="#">Advisory</a></li>
-			<li><a href="#">Cloud</a></li>
-			<li><a href="#">Case Management</a></li>
-			<li><a href="#">Cloud Desk</a></li>
-			<li><a href="#">Legal</a></li>
-			<li><a href="#">Partnerships</a></li>
-		</ul>
-	</nav>
-</div>
-
 <?php wp_footer(); ?>
 
 <!-- Grunt Live Reload, to remove before production -->

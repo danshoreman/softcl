@@ -1,6 +1,6 @@
 
 .main-menu{
-	display: none;
+	//display: none;
 }
 
 #trigger-overlay{
@@ -45,9 +45,6 @@
 }
 
 
-
-
-
 /* Overlay style */
 .overlay {
 	position: fixed;
@@ -56,7 +53,7 @@
 	top: 0;
 	left: 0;
 	background: rgba(230,93,51,0.9);
-	z-index: 1;
+	z-index: 10000;
 }
 
 /* Overlay closing cross */
@@ -72,11 +69,11 @@
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
-	z-index: 100;
+	z-index: 10000;
 }
 
 /* Menu style */
-.overlay nav {
+.overlay .main-menu {
 	text-align: center;
 	position: relative;
 	top: 50%;
@@ -141,12 +138,12 @@
 	transition: opacity 0.5s;
 }
 
-.overlay-hugeinc nav {
+.overlay-hugeinc .main-menu {
 	-webkit-perspective: 1200px;
 	perspective: 1200px;
 }
 
-.overlay-hugeinc nav ul {
+.overlay-hugeinc .main-menu ul {
 	opacity: 0.4;
 	-webkit-transform: translateY(-25%) rotateX(35deg);
 	transform: translateY(-25%) rotateX(35deg);
@@ -154,19 +151,19 @@
 	transition: transform 0.5s, opacity 0.5s;
 }
 
-.overlay-hugeinc.open nav ul {
+.overlay-hugeinc.open .main-menu ul {
 	opacity: 1;
 	-webkit-transform: rotateX(0deg);
 	transform: rotateX(0deg);
 }
 
-.overlay-hugeinc.close nav ul {
+.overlay-hugeinc.close .main-menu ul {
 	-webkit-transform: translateY(25%) rotateX(-35deg);
 	transform: translateY(25%) rotateX(-35deg);
 }
 
 @media screen and (max-height: 30.5em) {
-	.overlay nav {
+	.overlay .main-menu {
 		height: 70%;
 		font-size: 34px;
 	}
