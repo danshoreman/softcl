@@ -42,33 +42,15 @@
 
 </head>
 <body <?php body_class(); ?>>
+	<div class="overlay overlay-hugeinc">
+		<button type="button" class="overlay-close">Close</button>
+		<?php wp_nav_menu( array( 'menu' => 'Main Navigation', 'container_class' => 'main-menu' ) ); ?>
+	</div>	
 	<header class="page-header">
 		<div class="row">
 			<div class="small-12 columns">
 				<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/software-cloud.svg" alt="Software Cloud"></a>
 				<div id="trigger-overlay"><span></span></div>
-				
-				<div class="overlay overlay-hugeinc">
-				<button type="button" class="overlay-close">Close</button>
-				<?php wp_nav_menu( array( 'menu' => 'Main Navigation', 'container_class' => 'main-menu' ) ); ?>
-<!--
-				<nav>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Culture</a></li>
-						<li><a href="#">Advisory</a></li>
-						<li><a href="#">Cloud</a></li>
-						<li><a href="#">Case Management</a></li>
-						<li><a href="#">Cloud Desk</a></li>
-						<li><a href="#">Legal</a></li>
-						<li><a href="#">Partnerships</a></li>
-					</ul>
-				</nav>
--->
-			</div>	
-				
-			
-			
 			</div>
 		</div>
 	</header>
