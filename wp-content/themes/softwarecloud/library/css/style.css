@@ -2421,6 +2421,14 @@ h5, .h5 {
   text-align: center;
 }
 
+.raring .partner-wrap .test-slider {
+  background: red;
+}
+
+.raring .partner-wrap .test-slider div {
+  background: blue;
+}
+
 .raring .partner-wrap .partner-panel .partner {
   padding: 1rem;
 }

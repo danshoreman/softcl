@@ -21,8 +21,8 @@
 		  slidesToShow: 1,
 		  slidesToScroll: 1
 	  });
-		
-		$('.partner-panel').slick({
+	  
+    $('.partner-panel').slick({
 	    dots: false,
 		  infinite: true,
 		  speed: 500,

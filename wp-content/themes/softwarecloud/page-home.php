@@ -95,30 +95,36 @@
 	<div class="partner-wrap">
 		<div class="row">
 			<div class="small-12 columns">
-				<h3>Those who trust in us.</h3>
+				<h3>Some of the brilliant clients we're lucky enough to work with.</h3>
+				
+				
+				
 				<div class="partner-panel">
+				
 					<div class="partner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					</div>
 					<div class="partner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					</div>
 					<div class="partner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					</div>
 					<div class="partner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					</div>
 					<div class="partner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					</div>
 					<div class="partner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					</div>
 					<div class="partner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/aviva.png" alt="" class="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
 					</div>
+					
 				</div>
+				
 			</div>
 		</div>
 	</div>
