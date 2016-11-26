@@ -67,6 +67,13 @@
                 "operator": "==",
                 "value": "10"
             }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "14"
+            }
         ]
     ],
     "menu_order": 0,
@@ -77,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480161569
+    "modified": 1480184943
 }

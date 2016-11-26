@@ -2764,6 +2764,10 @@ h5, .h5 {
   }
 }
 
+.introduction.cloud-intro {
+  background: #28a1b5;
+}
+
 @media only screen and (min-width: 64.063em) {
   .two-col-alt .lcol {
     text-align: right;
@@ -2771,6 +2775,11 @@ h5, .h5 {
   .two-col-alt .otherrcol {
     text-align: right;
   }
+}
+
+.contact-form {
+  background: #e65d33;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
