@@ -8,6 +8,56 @@
 
 <section class="about-us">
 	
+	<?php 
+	$counter = 0;
+	if( have_rows('we_are_block') ): ?>
+
+	<div class="Row">
+
+	<?php while( have_rows('we_are_block') ): the_row(); 
+		
+		$title = get_sub_field('we_are_title'); 
+		$imgcol = wp_get_attachment_image_src(get_sub_field('were_left_col'), 'image');
+		$rcol = get_sub_field('were_right_col');
+		$class = get_sub_field('class_field'); ?>
+		
+		<div class="<?php echo $class; ?>-block">
+			<h3><?php echo $title; ?></h3>
+	
+			<div class="row">
+				<?php if ($counter % 2 === 0) :?>
+					<div class="small-12 medium-6 columns img-col">
+		
+						<img src="<?php echo $imgcol[0]; ?>" alt="" class="">
+		
+					</div>
+					<div class="small-12 medium-6 columns">
+		
+						<?php echo $rcol; ?>
+		
+					</div>
+				<?php else : ?>
+					<div class="small-12 medium-6 medium-push-6 columns img-col">
+	
+						<img src="<?php echo $imgcol[0]; ?>" alt="" class="">
+	
+					</div>
+					<div class="small-12 medium-6 medium-pull-6 columns">
+		
+						<?php echo $rcol; ?>
+		
+					</div>
+				<?php endif; ?>
+			</div>
+		</div>
+
+	<?php $counter++;
+		endwhile; ?>
+
+	</div>
+
+<?php endif; ?>
+	<!--
 	<div class="row">
 		<div class="small-12 columns">
 			<div class="experts-block">
@@ -31,7 +81,6 @@
 			</div>		
 		</div>
 	</div>
-	
 	
 	<div class="row">
 		<div class="small-12 columns">
@@ -72,7 +121,7 @@
 				</div>		
 			</div>	
 		</div>
-	</div>
+	</div>-->
 </section>
 
 <?php // include 'partials/contact-form.php'; ?>
