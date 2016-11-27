@@ -33,11 +33,11 @@
 
 				<?php elseif( get_row_layout() == 'logo_on_colour' ) : 
 					
-					$bgcol = the_sub_field('background_colour');
-					$logo = wp_get_attachment_image_src(get_sub_field('logo'), 'full'); ?>
+					$logo = wp_get_attachment_image_src(get_sub_field('logo'), 'full'); 
+					$bgcol = get_sub_field('background_colour'); ?>
 				
 					<div class="carousel-slide">
-						<div class="carousel-inner" <?php /* if($bgcol) : */ ?> style="background-color: <?php the_sub_field('background_colour'); ?>" <?php /* endif; */ ?>>
+						<div class="carousel-inner" <?php if($bgcol) : ?> style="background-color: <?php echo $bgcol; ?>" <?php endif; ?>>
 							<div class="row">
 								<div class="small-12 columns">
 									<?php the_sub_field('background_video'); ?>
