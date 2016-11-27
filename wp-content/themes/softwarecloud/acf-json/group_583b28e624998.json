@@ -1,12 +1,12 @@
 {
-    "key": "group_583b2343df019",
-    "title": "We Need...",
+    "key": "group_583b28e624998",
+    "title": "Benefits...",
     "fields": [
         {
-            "key": "field_583b2343e42c4",
-            "label": "We Need Image",
-            "name": "we_need_image",
-            "type": "image",
+            "key": "field_583b28e62a035",
+            "label": "Benefits Title",
+            "name": "benefits_title",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,21 +15,15 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
         },
         {
-            "key": "field_583b2343e42d6",
-            "label": "We Need Text",
-            "name": "we_need_text",
+            "key": "field_583b28e62a067",
+            "label": "Benefits Text",
+            "name": "benefits_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -54,7 +48,7 @@
             }
         ]
     ],
-    "menu_order": 3,
+    "menu_order": 4,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -62,5 +56,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480272092
+    "modified": 1480272464
 }

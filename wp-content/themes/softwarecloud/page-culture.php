@@ -8,12 +8,12 @@
 	
 	<?php include 'partials/two-col-alt.php'; ?>
 	
-	<div class="graduates-panel">
+	<div class="two-col-panel">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
 				
 				<?php $gradimg = wp_get_attachment_image_src(get_field('graduates_image'), 'full'); ?>
-				<img src="<?php echo $gradimg[0]; ?>" class="gradlogo" alt="Calling all graduates">
+				<img src="<?php echo $gradimg[0]; ?>" class="two-col-img" alt="Calling all graduates">
 				
 			</div>
 			<div class="small-12 medium-6 columns">
@@ -24,11 +24,11 @@
 	
 	<?php include 'partials/two-col-img-txt.php'; ?>
 	
-	<div class="graduates-panel">
+	<div class="two-col-panel">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
 				<?php $needimg = wp_get_attachment_image_src(get_field('we_need_image'), 'full'); ?>
-				<img src="<?php echo $needimg[0]; ?>" class="gradlogo" alt="Calling all graduates">
+				<img src="<?php echo $needimg[0]; ?>" class="two-col-img" alt="Calling all graduates">
 			</div>
 			<div class="small-12 medium-6 columns">
 				<?php the_field('we_need_text'); ?>
@@ -36,22 +36,13 @@
 		</div>
 	</div>
 	
-	<div class="benefits-panel">
+	<div class="two-col-panel two-col-imgalt benefits-panel">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<h4>Benefits<br>
-					aka good things for good people.</h4>
+				<?php the_field('benefits_title'); ?>
 			</div>
 			<div class="small-12 medium-6 columns">
-				<p>Here are just some of the great things you’ll get as part of our team:</p>
-				
-				<ul>
-					<li>Salary</li>
-					<li>Company socials</li>
-					<li>Dignity</li>
-					<li>Apples</li>
-					<li>Steak bake</li>
-				</ul>
+				<?php the_field('benefits_text'); ?>
 			</div>
 		</div>
 	</div>
