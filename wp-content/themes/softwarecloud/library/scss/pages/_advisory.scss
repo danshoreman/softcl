@@ -1,0 +1,150 @@
+.cloud-intro{
+	background: darken($beige, 5%);
+	
+	.cloud-title{
+		text-align: center;
+		color: $orange;
+		
+		h3{
+			font-size: 2.4rem;
+			margin-bottom: 0;
+		}
+		
+		p{
+			margin-top: 0;
+			font-size: 1.2rem;
+			line-height: 1.2;
+		}
+		
+		img{
+			width: 100%;
+			max-width: 200px;
+		}
+	}
+	
+	.cloud-info{
+		text-align: center;
+		
+		h4{
+			color: $orange;
+			font-size: 2.2rem;
+			line-height: 1.2;
+			margin-bottom: 0;
+		}
+		
+		p{
+			font-size: 1.2rem;
+			margin-top: 0;
+		}
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		.cloud-title{
+			
+			h3{
+				font-size: 4.2rem;
+			}
+			
+			p{
+				font-size: 2rem;
+				max-width: 500px;
+				margin: auto;
+			}
+			
+			img{
+				max-width: 250px;
+			}
+		}
+		
+		.cloud-info{
+			
+			h4{
+				color: $orange;
+				font-size: 2.6rem;
+			}
+			
+			p{
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+.testimonial-video{
+	background: $white;
+	text-align: center;
+	padding: 1rem 0;
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		padding: 1rem 20%;
+	}
+}
+
+.tools-used-panel{
+	background: $beige;
+	padding-bottom: 80px;
+	text-align: center;
+	color: $orange;
+	
+	h3{
+		font-size: 2rem;
+		margin-bottom: 0;
+	}
+	
+	p{
+		margin-top: 0;
+		font-size: 1.2rem;
+	}
+	
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		justify-content: center;
+		
+		li{
+			flex: 0 1 auto;
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			width: 100%;
+			text-align: center;
+			
+			img{
+				
+				display: inline;
+			}	
+		}
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		padding-bottom: 120px;
+		
+		h3{
+			font-size: 3rem;
+			margin-bottom: 0;
+		}
+		
+		p{
+			margin-top: 0;
+			font-size: 1.2rem;
+		}
+		
+		ul{
+			
+			li{
+				width: 33%;
+
+				img{
+					
+				}
+			}
+		}	
+	}
+}
+
+

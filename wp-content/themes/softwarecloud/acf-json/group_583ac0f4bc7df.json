@@ -118,7 +118,7 @@
                 {
                     "key": "583ac37687433",
                     "name": "logo_on_colour",
-                    "label": "Logo on colour",
+                    "label": "Image on colour",
                     "display": "row",
                     "sub_fields": [
                         {
@@ -181,6 +181,13 @@
                 "operator": "==",
                 "value": "10"
             }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "12"
+            }
         ]
     ],
     "menu_order": 1,
@@ -205,5 +212,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1480258884
+    "modified": 1480274960
 }

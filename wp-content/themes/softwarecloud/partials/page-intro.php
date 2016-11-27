@@ -22,6 +22,18 @@
 	</div>
 </section>
 
+<?php elseif (is_page('advisory')) : ?>
+
+<section class="introduction advisory-intro">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="intro-content">
+				<?php the_content(); ?>
+			</div>
+		</div>
+	</div>
+</section>
+
 <?php elseif (is_page('cloud-software')) : ?>
 
 <section class="introduction cloud-intro">

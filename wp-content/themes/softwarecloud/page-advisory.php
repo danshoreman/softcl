@@ -4,51 +4,52 @@
 
 	<?php include 'partials/carousel.php'; ?>
 	
+	<?php include 'partials/page-intro.php'; ?>
+	
 	<div class="cloud-intro">
+		
+		<div class="row">
+			<div class="small-12 columns cloud-title">
+				<?php the_field('cloud_title'); ?>
+			</div>
+		</div>
+		
+		<?php if( have_rows('cloud_panels') ): ?>
+
+			<div class="row">
+		
+			<?php while( have_rows('cloud_panels') ): the_row(); 
+		
+				$cloudimg = wp_get_attachment_image_src(get_sub_field('image'), 'thumbnail');
+				$cloudtitle = get_sub_field('title');
+				$cloudcopy = get_sub_field('copy');
+		
+				?>
+		
+				<div class="small-12 medium-6 end columns cloud-info">
+	
+					<img src="<?php echo $cloudimg[0]; ?>" alt="">
+					<h4><?php echo $cloudtitle; ?></h4>
+					<p><?php echo $cloudcopy; ?></p>
+	
+				</div>
+		
+				<?php endwhile; ?>
+		
+			</div>
+		
+		<?php endif; ?>
+		
+	</div>
+	
+	<div class="testimonial-video">
 		<div class="row">
 			<div class="small-12 columns">
-				<p>Yep. We said ‘in a nutshell’, and there was a picture of a nutshell. It’s not that clever. Do you know what *is* clever? The stuff we can do to make your business better and your life a more peaceful place.</p>
+				<div class="videoWrapper">
+					<?php the_field('testimonial_video'); ?>
+				</div>
 			</div>
 		</div>
-		
-		<div class="row">
-			<div class="small-12 columns">
-				<h3>Cloud</h3>
-				<p>We might be wearing odd socks
-					by accident, but we’re not called
-					Software Cloud by accident.</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="small-12 medium-6 columns">
-				<h4>Design & Planning</h4>
-				<p>Success is 100% preparation, 100% expertise.<br>And apparently 0% maths.</p>
-			</div>
-			<div class="small-12 medium-6 columns">
-				<h4>Readiness Assessment</h4>
-				<p>Weeding out the pitfalls and making<br> sure you’re clear for take-o.</p>
-			</div>
-			<div class="small-12 medium-6 columns">
-				<h4>Proof of Concept</h4>
-				<p>We’ve talked about it plenty. <br>Now see it in action.</p>
-			</div>
-			<div class="small-12 medium-6 columns">
-				<h4>Design & Planning</h4>
-				<p>Success is 100% preparation, 100% expertise.<br>And apparently 0% maths.</p>
-			</div>
-			<div class="small-12 medium-6 columns">
-				<h4>Support</h4>
-				<p>We haven’t just got good ideas,<br>we’ve got your back too.</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="small-12 columns">
-				<p>Video</p>
-			</div>
-		</div>
-		
 	</div>
 	
 	<div class="service-panel">
@@ -72,12 +73,32 @@
 		</div>
 	</div>
 	
-	<div class="service-panel">
+	<div class="tools-used-panel">
 		<div class="row">
-			<div class="small-12 medium-6 columns">
-				<h3>Behind the curtain</h3>
-				<p>A few of the tools we use to make the magic happen</p>
+			<div class="small-12 columns">
+				<?php the_field('tools_used_intro'); ?>
 				
+				<?php if( have_rows('tools_used_logos') ): ?>
+
+					<ul>
+				
+					<?php while( have_rows('tools_used_logos') ): the_row(); 
+				
+						$toolsimg = wp_get_attachment_image_src(get_sub_field('tools_logo'), 'full');
+						
+						?>
+				
+						<li>
+							<img src="<?php echo $toolsimg[0]; ?>" alt="">
+						</li>
+			
+						<?php endwhile; ?>
+				
+					</ul>
+				
+				<?php endif; ?>
+				
+<!--
 				<ul>
 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
@@ -85,6 +106,7 @@
 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
 				</ul>
+-->
 			</div>
 		</div>
 	</div>
@@ -101,7 +123,6 @@
 		</div>
 	</div>
 	
-	<?php include 'partials/page-intro.php'; ?>
 	
 	<?php include 'partials/two-col-alt.php'; ?>
 

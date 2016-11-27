@@ -1321,6 +1321,22 @@ h5, .h5 {
   font-size: 0.95rem;
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* min-width 641px */
 @media only screen and (min-width: 40.063em) {
   h1, .h1 {
@@ -2707,6 +2723,135 @@ h5, .h5 {
   }
   .two-col-panel.benefits-panel p {
     font-size: 1.8rem;
+  }
+}
+
+.cloud-intro {
+  background: #e1e1d9;
+}
+
+.cloud-intro .cloud-title {
+  text-align: center;
+  color: #e65d33;
+}
+
+.cloud-intro .cloud-title h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+
+.cloud-intro .cloud-title p {
+  margin-top: 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.cloud-intro .cloud-title img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.cloud-intro .cloud-info {
+  text-align: center;
+}
+
+.cloud-intro .cloud-info h4 {
+  color: #e65d33;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.cloud-intro .cloud-info p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .cloud-intro .cloud-title h3 {
+    font-size: 4.2rem;
+  }
+  .cloud-intro .cloud-title p {
+    font-size: 2rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  .cloud-intro .cloud-title img {
+    max-width: 250px;
+  }
+  .cloud-intro .cloud-info h4 {
+    color: #e65d33;
+    font-size: 2.6rem;
+  }
+  .cloud-intro .cloud-info p {
+    font-size: 1.6rem;
+  }
+}
+
+.testimonial-video {
+  background: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .testimonial-video {
+    padding: 1rem 20%;
+  }
+}
+
+.tools-used-panel {
+  background: #ecece7;
+  padding-bottom: 80px;
+  text-align: center;
+  color: #e65d33;
+}
+
+.tools-used-panel h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.tools-used-panel p {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.tools-used-panel ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.tools-used-panel ul li {
+  flex: 0 1 auto;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+}
+
+.tools-used-panel ul li img {
+  display: inline;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .tools-used-panel {
+    padding-bottom: 120px;
+  }
+  .tools-used-panel h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  .tools-used-panel p {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .tools-used-panel ul li {
+    width: 33%;
   }
 }
 
