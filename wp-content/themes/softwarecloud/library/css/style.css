@@ -2800,6 +2800,36 @@ h5, .h5 {
   }
 }
 
+.service-panel {
+  background: #e65d33;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+.service-panel h4 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.service-panel p {
+  font-size: 1.4rem;
+}
+
+.service-panel p .lg {
+  font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .service-panel {
+    padding: 3rem 0;
+  }
+  .service-panel h4 {
+    font-size: 4rem;
+  }
+}
+
 .tools-used-panel {
   background: #ecece7;
   padding-bottom: 80px;

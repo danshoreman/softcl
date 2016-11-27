@@ -77,8 +77,35 @@
 	padding: 1rem 0;
 	
 	@media only screen and (min-width: 48.063em) {
-		
 		padding: 1rem 20%;
+	}
+}
+
+.service-panel{
+	background: $orange;
+	color: $white;
+	padding: 1rem 0;
+	
+	h4{
+		font-size: 3rem;
+		margin: 1rem 0;
+		line-height: 1.2;
+	}
+	
+	p{
+		font-size: 1.4rem;
+		
+		.lg{
+			@include header-font;
+		}
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		padding: 3rem 0;
+		
+		h4{
+			font-size: 4rem;
+		}
 	}
 }
 

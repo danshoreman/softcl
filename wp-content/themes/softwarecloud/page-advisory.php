@@ -55,6 +55,8 @@
 	<div class="service-panel">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
+				<?php the_field('service_title'); ?>
+<!--
 				<h4>Sanity as<br> a Service</h4>
 				
 				<p>Wouldn’t it be nice to have smart, self-sustaining services that look after themselves?</p>
@@ -62,13 +64,17 @@
 				<p>You know, as if someone was doing all the tricky bits for you?</p>
 				
 				<p>...Hello!</p>
+-->
 			</div>
 			<div class="small-12 medium-6 columns">
+				<?php the_field('service_list'); ?>
+<!--
 				<p>Development<br>as a Service</p>
 				<p>Disaster Recovery<br>as a Service</p>
 				<p>Analytics & Reporting<br>as a Service</p>
 				<p>Security<br>as a Service</p>
 				<p>Backup<br>as a Service</p>
+-->
 			</div>
 		</div>
 	</div>
@@ -97,31 +103,11 @@
 					</ul>
 				
 				<?php endif; ?>
-				
-<!--
-				<ul>
-					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
-					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
-					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
-					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
-					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class=""></li>
-				</ul>
--->
 			</div>
 		</div>
 	</div>
 	
-	<div class="contact-form">
-		<div class="row">
-			<div class="small-12 columns">
-				<p>We’re in our element with bespoke projects, making business
-				cases, and delivering the solutions other people don’t think of.</p>
-				<p>If you’ve got a project we can help with,
-				call us on 0808 164 0000 or fill out the form below.</p>
-				<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
-			</div>
-		</div>
-	</div>
+	<?php include 'partials/contact-form.php'; ?>
 	
 	
 	<?php include 'partials/two-col-alt.php'; ?>
