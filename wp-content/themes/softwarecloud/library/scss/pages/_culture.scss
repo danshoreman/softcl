@@ -1,0 +1,22 @@
+.graduates-panel{
+	background: $orange;
+	
+	color: $white;
+	padding: 2rem 0;
+	
+	.gradlogo{
+		width: 100%;
+		max-width: 350px;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		padding: 4rem 0;
+		
+		h3{
+			margin-top: 0;
+		}
+	}
+}

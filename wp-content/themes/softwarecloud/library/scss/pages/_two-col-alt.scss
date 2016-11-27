@@ -1,19 +1,98 @@
 .two-col-alt{
 	
+	background: $beige;
+	padding: 1rem 0;
+
+	@media only screen and (min-width: 48.063em) {
+		
+		padding: 2rem 0;	
+	}	
+}
+
+.two-col{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0 1rem;
+	
+	h3{
+		border-bottom: 1px solid darken($beige, 10%);
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: $orange;
+	}
+	
+	p{
+		color: $orange;
+	}
+	
 	.lcol{
+		flex: 0 1 auto;
+		width: 100%;
 	}
 	
 	.rcol{
+		flex: 0 1 auto;
+		width: 100%;
 	}
 	
-	@media only screen and (min-width: 64.063em) {
+	@media only screen and (min-width: 48.063em) {
+		
+		align-items: center;
+		
+	
+		h3{
+			font-size: 2rem;
+			padding-bottom: 0;
+			margin: inherit;
+			border-bottom: 0;
+		}
+		
+		.lcol,
+		.rcol{
+			width: 50%;
+			padding: 0 1rem;
+		}
 		
 		.lcol{
 			text-align: right;
 		}
 		
-		.otherrcol{
-			text-align: right;
+		&.flipped{
+			flex-direction: row-reverse;
+			
+			.lcol{
+				text-align: left;
+			}
+			
+			.rcol{
+				text-align: right;
+			}
+		}
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+		
+		h3{
+			font-size: 4rem;
+		}
+		
+		p{
+			font-size: 1.6rem;
+			padding-right: 30%;
+		}
+		
+		.text-wrap{
+			margin: 3rem 0;
+		}
+		
+		&.flipped{
+			
+			p{
+				padding-right: inherit;
+				padding-left: 30%;
+			}
 		}
 	}
 }

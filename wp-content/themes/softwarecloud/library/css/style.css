@@ -1252,7 +1252,7 @@ GENERAL STYLES
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #2c373d;
+  color: #2d414f;
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
@@ -2646,6 +2646,28 @@ h5, .h5 {
 /* min-width 769px */
 /* min-width 1025px */
 /* min-width 1441px */
+.graduates-panel {
+  background: #e65d33;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.graduates-panel .gradlogo {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .graduates-panel {
+    padding: 4rem 0;
+  }
+  .graduates-panel h3 {
+    margin-top: 0;
+  }
+}
+
 .introduction {
   background: #e65d33;
   color: #ffffff;
@@ -2831,12 +2853,89 @@ h5, .h5 {
   background: #28a1b5;
 }
 
-@media only screen and (min-width: 64.063em) {
-  .two-col-alt .lcol {
+.two-col-alt {
+  background: #ecece7;
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .two-col-alt {
+    padding: 2rem 0;
+  }
+}
+
+.two-col {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 1rem;
+}
+
+.two-col h3 {
+  border-bottom: 1px solid #d5d5cb;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #e65d33;
+}
+
+.two-col p {
+  color: #e65d33;
+}
+
+.two-col .lcol {
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+.two-col .rcol {
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .two-col {
+    align-items: center;
+  }
+  .two-col h3 {
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin: inherit;
+    border-bottom: 0;
+  }
+  .two-col .lcol,
+  .two-col .rcol {
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .two-col .lcol {
     text-align: right;
   }
-  .two-col-alt .otherrcol {
+  .two-col.flipped {
+    flex-direction: row-reverse;
+  }
+  .two-col.flipped .lcol {
+    text-align: left;
+  }
+  .two-col.flipped .rcol {
     text-align: right;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .two-col h3 {
+    font-size: 4rem;
+  }
+  .two-col p {
+    font-size: 1.6rem;
+    padding-right: 30%;
+  }
+  .two-col .text-wrap {
+    margin: 3rem 0;
+  }
+  .two-col.flipped p {
+    padding-right: inherit;
+    padding-left: 30%;
   }
 }
 

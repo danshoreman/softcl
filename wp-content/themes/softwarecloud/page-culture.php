@@ -11,13 +11,13 @@
 	<div class="graduates-panel">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/culture/calling-graduates.png" alt="" class="">
-				<p>If you’re one one of those independent thinkers who loves new technology, and you’re into development or testing, drop us a line.</p>
+				
+				<?php $gradimg = wp_get_attachment_image_src(get_field('graduates_image'), 'full'); ?>
+				<img src="<?php echo $gradimg[0]; ?>" class="gradlogo" alt="Calling all graduates">
+				
 			</div>
 			<div class="small-12 medium-6 columns">
-				<p>We’re always looking for new talent for our grad programme. It’s a year long, and will see you get real-world experience split between client sites and our Leeds city centre office.</p>
-				
-				<p>We think it’s great. But don’t listen to us, listen to one of our real-life graduates, soon to be a fully-fledged consultant. Look - he’s smiling, we didn’t hold a gun to his head or anything. Just threatened to take away his 80s playlist privileges.</p>
+				<?php the_field('graduates_text'); ?>
 			</div>
 		</div>
 	</div>

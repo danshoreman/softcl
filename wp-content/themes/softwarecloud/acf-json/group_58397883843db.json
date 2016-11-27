@@ -1,6 +1,6 @@
 {
     "key": "group_58397883843db",
-    "title": "Two Column Alternate Layout",
+    "title": "What we love...",
     "fields": [
         {
             "key": "field_583978c3ec413",
@@ -76,7 +76,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -84,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480184943
+    "modified": 1480268865
 }

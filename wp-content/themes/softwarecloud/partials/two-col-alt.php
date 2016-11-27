@@ -9,31 +9,42 @@
 		$lcol = get_sub_field('left_column');
 		$rcol = get_sub_field('right_column'); ?>
 
-		<div class="row">
-			<?php if ($counter % 2 === 0) :?>
-				<div class="small-12 large-6 large-push-6 columns otherlcol">
+		<?php if ($counter % 2 === 0) :?>
+			<div class="two-col">
+				<div class="lcol">
 	
-					<?php echo $rcol; ?>
-	
-				</div>
-				<div class="small-12 large-6 large-pull-6 columns otherrcol">
-	
-					<?php echo $lcol; ?>
+					<div class="text-wrap">
+						<?php echo $rcol; ?>
+					</div>
 	
 				</div>
-			<?php else : ?>
-				<div class="small-12 large-6 columns lcol">
+				<div class="rcol">
+	
+					<div class="text-wrap">
+						<?php echo $lcol; ?>
+					</div>
+	
+				</div>
+			</div>
+		<?php else : ?>
+			<div class="two-col flipped">
+				<div class="lcol">
 
-				<?php echo $lcol; ?>
-
+					<div class="text-wrap">
+						<?php echo $lcol; ?>
+					</div>
+					
 				</div>
-				<div class="small-12 large-6 columns rcol">
-	
-					<?php echo $rcol; ?>
-	
+				<div class="rcol">
+					
+					<div class="text-wrap">
+						<?php echo $rcol; ?>
+					</div>
+				
 				</div>
+			</div>
 			<?php endif; ?>
-		</div>
+		
 
 	<?php $counter++;
 		endwhile; ?>
