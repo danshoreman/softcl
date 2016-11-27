@@ -302,16 +302,17 @@
 	
 	@media only screen and (min-width: 48.063em) {
 		
-		h3,p, p.call-us{
-			text-align: left;
-			padding-left: 0;
-			max-width: 550px;
-			margin-left: auto;
-			margin-right: auto;
-		}
+		
+		
 	}
 	
 	@media only screen and (min-width: 64.063em) {
+		
+		
+		h3,p, p.call-us{
+			text-align: left;
+			padding-left: 0;
+		}
 		
 		h3{
 			font-size: 3.2rem;
@@ -324,17 +325,21 @@
 				font-size: 2rem;
 			}
 		}
+		
+		.gform_wrapper{
+			margin-top: 3rem;	
+		}
 	}
-	
 	
 	.partner-wrap{
 		background: darken($beige, 8%);
-		padding-bottom: 70px;
+		padding-bottom: 100px;
 		margin-top: 50px;
 		
 		h3{
-			font-size: 1.6rem;
+			font-size: 1.3rem;
 			text-align: center;
+			margin: 3rem 0 2rem 0;
 		}
 		
 		.test-slider{
@@ -378,6 +383,7 @@
 			
 			.partner-panel{
 				
+				
 				.slick-arrow{
 					
 					&.slick-prev{
@@ -395,6 +401,10 @@
 		}
 		@media only screen and (min-width: 64.063em) {
 			padding-bottom: 110px;
+			
+			h3{
+				font-size: 1.6rem;
+			}
 		}
 		@media only screen and (min-width: 90.063em) {
 			padding-bottom: 150px;
@@ -448,6 +458,12 @@
 			.btn-more{
 				background: $header-intro;
 				color: $white;
+				text-decoration: none;
+				@include border-radius(3px);
+				
+				&:hover{
+					background: darken($header-intro, 5%)
+				}
 			}
 		}
 		

@@ -2,6 +2,26 @@
 Stylesheet: Forms
 ******************************************************************/
 
+.gform_wrapper .gform_body {
+    width: 100% !important;
+}
+
+.gform_wrapper{
+	
+}
+
+.gform_footer{
+	
+	.button{
+		background: $orange;
+		color: $white;
+		
+		&:hover{
+			background: darken($orange, 5%);
+		}
+	}
+}
+
 
 form{
 	

@@ -63,17 +63,7 @@
 <section class="raring">
 	<div class="row">
 		<div class="small-12 large-6 columns">
-			<h3>We're raring to go.</h3>
-			
-			<p>You won’t find out everything you need to know about us from reading a web page.</p>
-			
-			<p>This information is for every Tom, Dick and Harry.</p>
-			
-			<p class="lg-text">We want to talk about you.</p>
-			
-			<p>Specifically how we can do some great stuff for your business.</p>
-			
-			<p class="call-us">Call us on 0808 164 0000 and see what we can do.</p>
+			<?php the_field('contact_form_copy'); ?>
 		</div>
 		<div class="small-12 large-6 columns">
 			<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
@@ -120,8 +110,37 @@
 <section class="trust-panel">
 	<div class="row">
 		<div class="small-12 columns">
-			<h4>Stuff we trust. Because it works.</h4>
+			<h4><?php echo get_field('tools_title'); ?></h4>
 			
+			<?php if( have_rows('tool') ): ?>
+
+					<div class="tools-panel">
+				
+					<?php while( have_rows('tool') ): the_row(); 
+						
+						$copy = get_sub_field('tools_copy');
+						$imgcol = wp_get_attachment_image_src(get_sub_field('tools_logo'), 'landscape_thumbnail');
+						$tools_link = get_sub_field('tools_link'); ?>
+				
+						<div class="tool">
+				
+							<img src="<?php echo $imgcol[0]; ?>" alt="" />
+							
+							<p><?php echo $copy; ?></p>
+							<?php if( $tools_link ): ?>
+								<a class="btn btn-more" href="<?php echo $tools_link; ?>">Read More</a>
+							<?php endif; ?>
+				
+						</div>
+				
+					<?php endwhile; ?>
+				
+					</div>
+				
+				<?php endif; ?>
+			
+			
+				<!--
 			<div class="tools-panel">
 				<div class="tool">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
@@ -154,14 +173,13 @@
 					<button class="btn btn-more">Read More</button>
 				</div>
 			</div>
+-->
 		</div>
 	</div>
 	
 </section>
 
-			
-
-	<?php endwhile;  ?>
+<?php endwhile;  ?>
 <?php endif; ?>
 
 
