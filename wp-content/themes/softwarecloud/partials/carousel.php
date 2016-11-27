@@ -1,93 +1,58 @@
-<?php 
+<?php if( have_rows('hero_content') ) : ?>
 
-	$image_id = get_post_thumbnail_id(); 
-	$image_url = wp_get_attachment_image_src($image_id,'hero');
+  <section class="carousel" >
+     
+    <?php while ( have_rows('hero_content') ) : the_row(); ?>
 
-?>
+        <?php if( get_row_layout() == 'image_background_layout' ) : 
+	        
+	        $bgimage = wp_get_attachment_image_src(get_sub_field('background_image'), 'hero'); ?>
 
-
-<section class="carousel">
-	<div class="carousel-slide">
-		<div class="carousel-inner" <?php if($image_url) : ?> style="background-image: url(<?php echo $image_url[0]; ?>);" <?php endif; ?>>
-			<div class="row">
-				<div class="small-12 columns">
-					<h1>
-						<span class="disclaimer">Things we love #39867:</span><br>
-						Making your <br>big IT ideas work.
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="carousel-slide">
-		<div class="carousel-inner" <?php if($image_url) : ?> style="background-image: url(<?php echo $image_url[0]; ?>);" <?php endif; ?>>
-			<div class="row">
-				<div class="small-12 columns">
-					<h1>
-						<span class="disclaimer">Things we love #39867:</span><br>
-						Making your <br>big IT ideas work.
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-<?php /*if( have_rows('carousel') ): ?>
-
-	<section class="carousel">
-
-	<?php  while ( have_rows('carousel') ) : the_row(); ?>
-		
-		<div class="">
-
-		<?php if( get_row_layout() == 'background_image' ): ?>
-
-        <?php $bg_image = wp_get_attachment_image_src(get_sub_field('image'), 'full'); ?>
-				<div class="carousel-inner" <?php if($bg_image) : ?> style="background-image: url(<?php echo $bg_image[0]; ?>);" <?php endif; ?>>
-					<div class="row">
-						<div class="small-12 columns">
-							<?php echo get_sub_field('overlay_text'); ?>
+					<div class="carousel-slide">
+						<div class="carousel-inner" <?php if($bgimage) : ?> style="background-image: url(<?php echo $bgimage[0]; ?>);" <?php endif; ?>>
+							<div class="row">
+								<div class="small-12 columns">
+									<?php the_sub_field('image_overlay_text'); ?>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+
+        <?php elseif( get_row_layout() == 'video_background_layout' ) : ?>
+
+					<div class="carousel-slide">
+						<div class="carousel-inner">
+							<div class="row">
+								<div class="small-12 columns">
+									<?php the_sub_field('background_video'); ?>
+									<?php the_sub_field('video_overlay_text'); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<?php elseif( get_row_layout() == 'logo_on_colour' ) : 
+					
+					$bgcol = the_sub_field('background_colour');
+					$logo = wp_get_attachment_image_src(get_sub_field('logo'), 'full'); ?>
 				
-				<?php elseif( get_row_layout() == 'background_video' ): ?>
-
-        <?php	//$vid = get_sub_field('video'); 
-	        
-	        $hero_video			= get_sub_field('video'); 
-					$hero_poster 		= wp_get_attachment_image_src(get_sub_field('video_poster'), 'full')
-	        
-	        
-        ?>
-				<div class="carousel-inner" >
-					
-					
-					<div class="hero-wrap video-panel">
-					  <div class="video-contain">
-						  <video autoplay="true" loop="true" muted poster="<?php echo $hero_poster[0]; ?>" id="video-bg">
-							  <source src="<?php echo $hero_video; ?>" type="video/mp4">
-						  </video>
-					  </div>
-					</div>
-    
-    
-					<div class="row">
-						<div class="small-12 columns">
-							<?php echo $vid ?>
-							<?php echo get_sub_field('video_text'); ?>
+					<div class="carousel-slide">
+						<div class="carousel-inner" <?php /* if($bgcol) : */ ?> style="background-color: <?php the_sub_field('background_colour'); ?>" <?php /* endif; */ ?>>
+							<div class="row">
+								<div class="small-12 columns">
+									<?php the_sub_field('background_video'); ?>
+									<img src="<?php echo $logo[0]; ?>" alt="" class="">
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-    
-    <?php endif; ?>
-       
-		</div>
 
-	<?php endwhile; ?>
+        <?php endif; ?>
 
-	</section>
+   <?php endwhile; ?>
+   
+  </section>
+   
+<?php endif; ?>
 
-<?php endif; */ ?>
+

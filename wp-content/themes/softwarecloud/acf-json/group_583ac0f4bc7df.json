@@ -1,11 +1,11 @@
 {
-    "key": "group_583754777af5c",
-    "title": "Hero Carousel",
+    "key": "group_583ac0f4bc7df",
+    "title": "Hero Panel",
     "fields": [
         {
-            "key": "field_58375532cb3c2",
-            "label": "Carousel",
-            "name": "carousel",
+            "key": "field_583ac1188742d",
+            "label": "Hero Content",
+            "name": "hero_content",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -20,17 +20,17 @@
             "max": "",
             "layouts": [
                 {
-                    "key": "583767edf080b",
-                    "name": "background_image",
-                    "label": "Background Image",
-                    "display": "table",
+                    "key": "583ac1bff2071",
+                    "name": "image_background_layout",
+                    "label": "Image Background Layout",
+                    "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_5837680d925a2",
-                            "label": "Image",
-                            "name": "image",
+                            "key": "field_583ac1f08742e",
+                            "label": "Background Image",
+                            "name": "background_image",
                             "type": "image",
-                            "instructions": "",
+                            "instructions": "Image size should be larger than 1100px x 745px.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -50,9 +50,9 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5837681f925a3",
-                            "label": "Overlay Text",
-                            "name": "overlay_text",
+                            "key": "field_583ac2b18742f",
+                            "label": "Image Overlay Text",
+                            "name": "image_overlay_text",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -72,17 +72,17 @@
                     "max": ""
                 },
                 {
-                    "key": "5837683a925a4",
-                    "name": "background_video",
-                    "label": "Background Video",
-                    "display": "table",
+                    "key": "583ac2fa87430",
+                    "name": "video_background_layout",
+                    "label": "Video Background Layout",
+                    "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_5837684d925a5",
-                            "label": "Video",
-                            "name": "video",
+                            "key": "field_583ac30987431",
+                            "label": "Background Video",
+                            "name": "background_video",
                             "type": "url",
-                            "instructions": "",
+                            "instructions": "Video should be hosted on Vimeo and the video source url pasted in here.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -94,9 +94,9 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_5837685c925a6",
-                            "label": "Video Text",
-                            "name": "video_text",
+                            "key": "field_583ac35f87432",
+                            "label": "Video Overlay Text",
+                            "name": "video_overlay_text",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -110,11 +110,36 @@
                             "tabs": "all",
                             "toolbar": "full",
                             "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "583ac37687433",
+                    "name": "logo_on_colour",
+                    "label": "Logo on colour",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_583ac38f87434",
+                            "label": "Background colour",
+                            "name": "background_colour",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#e65d33"
                         },
                         {
-                            "key": "field_5838bf3e35615",
-                            "label": "Video poster",
-                            "name": "video_poster",
+                            "key": "field_583ac3c187435",
+                            "label": "Logo",
+                            "name": "logo",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -152,12 +177,26 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1480161398
+    "modified": 1480246231
 }

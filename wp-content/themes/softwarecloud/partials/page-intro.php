@@ -4,14 +4,7 @@
 	<div class="row">
 		<div class="small-12 columns">
 			<div class="intro-content">
-				<h2>We're obsessed with making your business run better, faster and cheaper.</h2>
-		
-				<p>IT's just the way we happen to do it. 
-				And the Cloud is where we do it.</p>
-				
-				<p>(Well... the Cloud and Leeds.)</p>
-				
-				<p>Why you’ve come to the right place</p>
+				<?php the_content(); ?>
 			</div>
 		</div>
 	</div>

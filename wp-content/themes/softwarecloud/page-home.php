@@ -75,9 +75,11 @@
 	</div>
 </section>
 
+<?php // include 'partials/contact-form.php'; ?>
+
 <section class="raring">
 	<div class="row">
-		<div class="small-12 medium-8 medium-offset-2 columns">
+		<div class="small-12 large-6 columns">
 			<h3>We're raring to go.</h3>
 			
 			<p>You won’t find out everything you need to know about us from reading a web page.</p>
@@ -90,14 +92,16 @@
 			
 			<p class="call-us">Call us on 0808 164 0000 and see what we can do.</p>
 		</div>
+		<div class="small-12 large-6 columns">
+			
+			
+		</div>
 	</div>
 	
 	<div class="partner-wrap">
 		<div class="row">
 			<div class="small-12 columns">
 				<h3>Some of the brilliant clients we're lucky enough to work with.</h3>
-				
-				
 				
 				<div class="partner-panel">
 				
