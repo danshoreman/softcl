@@ -17,19 +17,6 @@
 		
 		p{
 			font-size: 1.2rem;
-			
-			&:nth-of-type(2n){
-				font-size: 1.6rem;
-				margin-bottom: 3rem;
-			}
-			
-			&:last-of-type{
-				@include header-font;
-				font-size: 1.5rem;
-		    width: 60%;
-		    margin: auto;
-		    margin-top: 5rem;
-			}
 		}
 	}
 	
@@ -65,10 +52,6 @@
 			}
 			
 			p{
-				
-				&:last-of-type{
-					width: inherit;
-				}
 			}
 		}
 		
@@ -88,13 +71,6 @@
 			
 			h2{
 				font-size: 2.4rem;
-			}
-			
-			p{
-				
-				&:last-of-type{
-					margin: 7rem 0 1rem 0;
-				}
 			}
 		}
 		
@@ -118,7 +94,23 @@
 	/** HOMEPAGE **/ 
 	&.home-intro{
 		
-			&:after{
+		p{
+			
+			&:nth-of-type(2n){
+				font-size: 1.6rem;
+				margin-bottom: 3rem;
+			}
+			
+			&:last-of-type{
+				@include header-font;
+				font-size: 1.5rem;
+		    width: 60%;
+		    margin: auto;
+		    margin-top: 5rem;
+			}
+		}
+		
+		&:after{
 			content: '';
 			position: absolute;
 			bottom: -25px;
@@ -135,7 +127,30 @@
 			z-index: 1;
 		}
 		
+		@media only screen and (min-width: 670px) {
+		
+			.intro-content{
+				
+				p{
+					
+					&:last-of-type{
+						width: inherit;
+					}
+				}
+			}	
+		}	
+		
 		@media only screen and (min-width: 48.063em) {
+			
+			.intro-content{
+				
+				p{
+					
+					&:last-of-type{
+						margin: 7rem 0 1rem 0;
+					}
+				}
+			}
 		
 			&:after{
 				bottom: -25px;
@@ -149,7 +164,36 @@
 		}
 	}
 	
-	/** CULTURE **/ 
+	/** Culture **/ 
+	&.culture-intro{
+		padding: 1rem 0 2rem 0;
+		
+		h2{
+			font-size: 1.6rem;
+		}
+		
+		p.lg{
+			font-size: 2.4rem;
+			@include header-font;
+		}
+	}
+	
+	/** Advisory **/ 
+	&.advisory-intro{
+		background: $beige;
+		color: $orange;
+		padding: 1rem 0 2rem 0;
+		
+		h2{
+			font-size: 1.8rem;
+		}
+		
+		&:before{
+			background-image: url(../images/general/cloud-pattern-beige.png);
+		}
+	}
+	
+	/** Cloud **/ 
 	&.cloud-intro{
 		background: #28a1b5;
 			

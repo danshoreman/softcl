@@ -16,9 +16,7 @@
 	<div class="row">
 		<div class="small-12 columns">
 			<div class="intro-content">
-				<h2>For some people 'work' is that place they dread going to. Where they wile away the weeks.</h2>
-		
-				<p class="large">That’s not where we work.</p>
+				<?php the_content(); ?>
 			</div>
 		</div>
 	</div>
