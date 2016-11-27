@@ -27,14 +27,11 @@
 	<div class="graduates-panel">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/culture/people-we-need.png" alt="" class="">
+				<?php $needimg = wp_get_attachment_image_src(get_field('we_need_image'), 'full'); ?>
+				<img src="<?php echo $needimg[0]; ?>" class="gradlogo" alt="Calling all graduates">
 			</div>
 			<div class="small-12 medium-6 columns">
-				<p>It’s not just the next generation of brilliant consultants and devs we’re looking for. We’re also currently on the lookout for:</p>
-			</div>
-			<div class="small-12 columns">
-				<h3>Experienced VisualFiles developers and consultants<br>
-					Got a few years under your belt helping clients build and maintain VisualFiles case management systems? If so, we’d love to hear from you.</h3>
+				<?php the_field('we_need_text'); ?>
 			</div>
 		</div>
 	</div>
