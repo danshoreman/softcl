@@ -1,0 +1,138 @@
+
+.carousel{
+
+	.carousel-slide{
+		height: 500px;		
+		
+		.carousel-inner{
+			height: 500px;
+			@include back-size(cover);
+			background-position: center center;
+			padding-top: 7rem;
+			padding-left: 1rem;
+			
+			h1{
+				color: $orange;
+				font-size: 2.8rem;
+				line-height: 1.2;
+				width: 265px;
+				
+				.disclaimer{
+					@include body-font;
+					font-size: 1rem;
+					display: block;
+				}
+				
+				br{
+					display: none;
+				}
+			}
+			
+			&.carousel-logo{
+				text-align: center;
+				
+				img{
+					display: inline;
+					width: 100%;
+					max-width: 700px;
+					margin-top: 3rem;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 40.063em) {
+			
+			height: 550px;
+			
+			.carousel-inner{
+				height: 550px;
+			
+				h1{
+					width: 400px;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 48.063em) {
+			
+			height: 600px;
+			
+			.carousel-inner{
+				height: 600px;
+			
+				h1{
+					font-size: 3.4rem;
+					width: 480px;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 64.063em) {
+			
+			height: 700px;
+			
+			.carousel-inner{
+				height: 700px;
+			
+				h1{
+					font-size: 3.4rem;
+					width: 480px;
+					position: absolute;
+					left: 40%;
+					top: 50px;
+				}
+			}
+		}
+			
+		@media only screen and (min-width: 90.063em) {
+			
+			height: 850px;
+			
+			.carousel-inner{
+				height: 850px;
+			
+				h1{
+					font-size: 4rem;
+					width: 550px;
+					left: 40%;
+					top: 120px;
+					
+					.disclaimer{
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+		
+	}
+	
+	.slick-dots{
+		bottom: 100px;
+		z-index: 2;
+		
+		li{
+			
+			button{
+				background: $orange;
+			}
+			
+			&.slick-active{
+				
+				button{
+					background: darken($orange, 20%);
+				}
+			}
+		}
+	}
+	
+	#video-bg{
+	  position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		height: auto;
+		min-height: 100%;
+		min-width: 100%;
+		transform: translate(-50%, -25%);
+	}
+}

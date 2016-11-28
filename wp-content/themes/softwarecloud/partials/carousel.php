@@ -37,7 +37,7 @@
 					$bgcol = get_sub_field('background_colour'); ?>
 				
 					<div class="carousel-slide">
-						<div class="carousel-inner" <?php if($bgcol) : ?> style="background-color: <?php echo $bgcol; ?>" <?php endif; ?>>
+						<div class="carousel-inner carousel-logo" <?php if($bgcol) : ?> style="background-color: <?php echo $bgcol; ?>" <?php endif; ?>>
 							<div class="row">
 								<div class="small-12 columns">
 									<?php the_sub_field('background_video'); ?>

@@ -197,5 +197,8 @@
 	&.cloud-intro{
 		background: #28a1b5;
 			
+		&:before{
+			display: none;
+		}
 	}
 }

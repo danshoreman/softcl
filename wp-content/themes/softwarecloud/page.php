@@ -1,67 +1,17 @@
 <?php get_header(); ?>
 
-	<div class="row">
-	
-		<div class="small-12 medium-8 columns" role="main">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php include 'partials/carousel.php'; ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
-				
-				<?php if ( has_post_thumbnail()) : ?>
-						
-					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="post-thumbnail">
-					
-						<?php the_post_thumbnail(); ?>
-					
-					</a>
-				
-				<?php endif; ?>
+<?php include 'partials/page-intro.php'; ?>
 
-				<header class="article-header">
+<?php include 'partials/two-col-main.php' ?>
 
-					<h1 itemprop="headline"><?php the_title(); ?></h1>
+<?php include 'partials/contact-form.php'; ?>
 
-				</header>
+<?php endwhile;  ?>
+<?php endif; ?>
 
-				<section class="entry-content" itemprop="articleBody">
-					
-					<?php the_content(); ?>
-
-				</section>
-
-				<?php comments_template(); ?>
-
-			</article>
-
-			<?php endwhile; else : ?>
-
-			<article class="post-not-found">
-			
-				<header class="not-found-header">
-					
-					<h2><?php _e( 'Nothing Found!' ); ?></h2>
-				
-				</header>
-				
-				<section class="not-found-content">
-					
-					<p><?php _e( 'Please check what you are looking for.' ); ?></p>
-				
-				</section>
-			
-			</article>
-
-			<?php endif; ?>
-
-		</div>
-
-		<div class="small-12 medium-4 columns">
-		
-			<?php get_sidebar(); ?>
-			
-		</div>
-
-	</div>
 
 <?php get_footer(); ?>
