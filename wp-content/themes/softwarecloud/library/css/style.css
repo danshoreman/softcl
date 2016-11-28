@@ -2952,7 +2952,7 @@ h5, .h5 {
 @media only screen and (min-width: 670px) {
   .introduction .intro-content {
     max-width: 660px;
-    padding-top: 2rem;
+    padding: 2rem 0 3rem 0;
   }
   .introduction .intro-content h2 {
     font-size: 1.6rem;
@@ -2964,12 +2964,9 @@ h5, .h5 {
 }
 
 @media only screen and (min-width: 48.063em) {
-  .introduction {
-    padding: 2rem 0 0 0;
-  }
   .introduction .intro-content {
     max-width: 750px;
-    padding: 4rem 0 3rem 0;
+    padding: 3rem 0 4rem 0;
   }
   .introduction .intro-content h2 {
     font-size: 2.4rem;
@@ -3024,12 +3021,18 @@ h5, .h5 {
 }
 
 @media only screen and (min-width: 670px) {
+  .introduction.home-intro .intro-content {
+    padding: 1rem 0 2rem 0;
+  }
   .introduction.home-intro .intro-content p:last-of-type {
     width: inherit;
   }
 }
 
 @media only screen and (min-width: 48.063em) {
+  .introduction.home-intro .intro-content {
+    padding: 4rem 0 3rem 0;
+  }
   .introduction.home-intro .intro-content p:last-of-type {
     margin: 7rem 0 1rem 0;
   }
