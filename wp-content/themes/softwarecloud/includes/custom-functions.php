@@ -35,3 +35,24 @@ add_action('wp_enqueue_scripts', 'scripts_and_styles', 999);
 
 /* Hide Admin Bar */
 show_admin_bar( false );
+
+
+/**
+ * add page slug to body class, if on a page
+ */
+ 
+add_filter('body_class','smartestb_pages_bodyclass');
+function smartestb_pages_bodyclass($classes) {
+  if (is_page()) {
+      // get page slug
+      global $post;
+      $slug = get_post( $post )->post_name;
+
+      // add slug to $classes array
+      $classes[] = $slug;
+      // return the $classes array
+      return $classes;
+  } else { 
+      return $classes;
+  }
+}

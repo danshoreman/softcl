@@ -34,7 +34,7 @@
 				img{
 					display: inline;
 					width: 100%;
-					max-width: 700px;
+					max-width: 400px;
 					margin-top: 3rem;
 				}
 			}
@@ -49,6 +49,14 @@
 			
 				h1{
 					width: 400px;
+				}
+				
+				&.carousel-logo{
+				
+					img{
+						max-width: 500px;
+						margin-top: 5rem;
+					}
 				}
 			}
 		}
@@ -81,6 +89,13 @@
 					left: 40%;
 					top: 50px;
 				}
+				
+				&.carousel-logo{
+				
+					img{
+						margin-top: 6rem;
+					}
+				}
 			}
 		}
 			
@@ -101,9 +116,16 @@
 						font-size: 1.2rem;
 					}
 				}
+				
+				&.carousel-logo{
+				
+					img{
+						max-width: 650px;
+						margin-top: 10rem;
+					}
+				}
 			}
 		}
-		
 	}
 	
 	.slick-dots{

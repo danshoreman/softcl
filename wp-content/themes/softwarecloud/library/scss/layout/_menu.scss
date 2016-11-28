@@ -44,6 +44,15 @@
   @include border-radius(2px);
 }
 
+body.cloud-software,
+body.advisory{
+	#trigger-overlay span,
+	#trigger-overlay span:after,
+	#trigger-overlay span:before {
+	  background-color: $white;
+	 }
+}
+
 
 /* Overlay style */
 .overlay {

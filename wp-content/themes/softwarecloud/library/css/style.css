@@ -1402,6 +1402,15 @@ h5, .h5 {
   border-radius: 2px;
 }
 
+body.cloud-software #trigger-overlay span,
+body.cloud-software #trigger-overlay span:after,
+body.cloud-software #trigger-overlay span:before,
+body.advisory #trigger-overlay span,
+body.advisory #trigger-overlay span:after,
+body.advisory #trigger-overlay span:before {
+  background-color: #ffffff;
+}
+
 /* Overlay style */
 .overlay {
   position: fixed;
@@ -2809,7 +2818,7 @@ h5, .h5 {
 .carousel .carousel-slide .carousel-inner.carousel-logo img {
   display: inline;
   width: 100%;
-  max-width: 700px;
+  max-width: 400px;
   margin-top: 3rem;
 }
 
@@ -2822,6 +2831,10 @@ h5, .h5 {
   }
   .carousel .carousel-slide .carousel-inner h1 {
     width: 400px;
+  }
+  .carousel .carousel-slide .carousel-inner.carousel-logo img {
+    max-width: 500px;
+    margin-top: 5rem;
   }
 }
 
@@ -2852,6 +2865,9 @@ h5, .h5 {
     left: 40%;
     top: 50px;
   }
+  .carousel .carousel-slide .carousel-inner.carousel-logo img {
+    margin-top: 6rem;
+  }
 }
 
 @media only screen and (min-width: 90.063em) {
@@ -2869,6 +2885,10 @@ h5, .h5 {
   }
   .carousel .carousel-slide .carousel-inner h1 .disclaimer {
     font-size: 1.2rem;
+  }
+  .carousel .carousel-slide .carousel-inner.carousel-logo img {
+    max-width: 650px;
+    margin-top: 10rem;
   }
 }
 
@@ -3080,11 +3100,11 @@ h5, .h5 {
   background-image: url(../images/general/cloud-pattern-beige.png);
 }
 
-.introduction.cloud-intro {
+.introduction.cloud-software-intro {
   background: #28a1b5;
 }
 
-.introduction.cloud-intro:before {
+.introduction.cloud-software-intro:before {
   display: none;
 }
 
