@@ -2778,6 +2778,55 @@ body.advisory #trigger-overlay span:before {
   }
 }
 
+.what-you-get-panel {
+  padding-bottom: 2rem;
+}
+
+.what-you-get-panel h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.what-you-get-panel .what-you-get {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.what-you-get-panel .what-you-get .wyg-item {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  flex: 0 1 auto;
+  width: 100%;
+  list-style-type: none;
+}
+
+.what-you-get-panel .what-you-get .wyg-item h4 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.what-you-get-panel .what-you-get .wyg-item p {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .what-you-get-panel h2 {
+    font-size: 3rem;
+  }
+  .what-you-get-panel .what-you-get {
+    justify-content: center;
+  }
+  .what-you-get-panel .what-you-get .wyg-item {
+    flex: 0 1 auto;
+    width: 25%;
+    margin-bottom: 2rem;
+  }
+}
+
 .carousel .carousel-slide {
   height: 500px;
 }
@@ -3274,6 +3323,10 @@ body.advisory #trigger-overlay span:before {
   font-size: 1.4rem;
   text-align: center;
   line-height: 1.4;
+}
+
+.contact-form h1, .contact-form h2, .contact-form h3, .contact-form h4, .contact-form h5 {
+  text-align: center;
 }
 
 .contact-form:before {
