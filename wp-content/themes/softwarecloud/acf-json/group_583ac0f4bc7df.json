@@ -223,6 +223,13 @@
                 "operator": "==",
                 "value": "22"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-single.php"
+            }
         ]
     ],
     "menu_order": 1,
@@ -247,5 +254,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1480287057
+    "modified": 1480334484
 }

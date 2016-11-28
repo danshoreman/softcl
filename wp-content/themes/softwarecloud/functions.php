@@ -37,6 +37,13 @@ add_image_size( 'image', 700, 350, true );
 add_image_size( 'hero', 1100, 745, true );
 add_image_size( 'landscape_thumbnail', 450, 300, true );
 
+/* Register Nav Menus */
+register_nav_menus( array(
+	'menu' => 'Main Nav',
+	'footer_menu' => 'Footer Nav',
+) );
+
+
 
 /* Register our sidebars and widgetized areas */
 function arphabet_widgets_init() {

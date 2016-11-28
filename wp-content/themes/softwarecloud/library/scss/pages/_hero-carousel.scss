@@ -158,3 +158,32 @@
 		transform: translate(-50%, -25%);
 	}
 }
+
+body.advisory{
+	
+	.carousel{
+
+		.carousel-slide{
+			
+			.carousel-logo img{
+				max-width: inherit;
+				margin-top: 3rem;
+			}
+			
+			@media only screen and (min-width: 40.063em) {
+				
+				.carousel-logo img{
+					margin-top: 0;
+					max-width: 800px;
+				}
+			}
+			
+			@media only screen and (min-width: 90.063em) {
+				
+				.carousel-logo img{
+					max-width: inherit;
+				}
+			}
+		}
+	}
+}

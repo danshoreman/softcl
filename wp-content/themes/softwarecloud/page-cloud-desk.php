@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	
-	<?php include 'partials/two-col-alt.php'; ?>
+	<?php include 'partials/two-col-main.php'; ?>
 	
 	<?php include 'partials/contact-form.php'; ?>
 

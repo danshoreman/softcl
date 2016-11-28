@@ -49,7 +49,7 @@
 	<header class="page-header">
 		<div class="row">
 			<div class="small-12 columns">
-				<?php if (is_page(array('advisory','cloud-software'))) : ?>
+				<?php if (is_page(array('advisory','cloud-desk'))) : ?>
 				<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/software-cloud-white.svg" alt="Software Cloud"></a>
 				<?php else : ?>
 				<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/software-cloud.svg" alt="Software Cloud"></a>

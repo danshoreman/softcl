@@ -1402,9 +1402,9 @@ h5, .h5 {
   border-radius: 2px;
 }
 
-body.cloud-software #trigger-overlay span,
-body.cloud-software #trigger-overlay span:after,
-body.cloud-software #trigger-overlay span:before,
+body.cloud-desk #trigger-overlay span,
+body.cloud-desk #trigger-overlay span:after,
+body.cloud-desk #trigger-overlay span:before,
 body.advisory #trigger-overlay span,
 body.advisory #trigger-overlay span:after,
 body.advisory #trigger-overlay span:before {
@@ -2827,6 +2827,28 @@ body.advisory #trigger-overlay span:before {
   }
 }
 
+.single-column {
+  padding: 1rem 0;
+  /* min-width 769px */
+  /* min-width 1025px */
+}
+
+@media only screen and (min-width: 48.063em) {
+  .single-column {
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .single-column {
+    padding: 3rem 0;
+  }
+  .single-column p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
 .carousel .carousel-slide {
   height: 500px;
 }
@@ -2963,6 +2985,24 @@ body.advisory #trigger-overlay span:before {
   min-height: 100%;
   min-width: 100%;
   transform: translate(-50%, -25%);
+}
+
+body.advisory .carousel .carousel-slide .carousel-logo img {
+  max-width: inherit;
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  body.advisory .carousel .carousel-slide .carousel-logo img {
+    margin-top: 0;
+    max-width: 800px;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  body.advisory .carousel .carousel-slide .carousel-logo img {
+    max-width: inherit;
+  }
 }
 
 .introduction {
@@ -3149,11 +3189,11 @@ body.advisory #trigger-overlay span:before {
   background-image: url(../images/general/cloud-pattern-beige.png);
 }
 
-.introduction.cloud-software-intro {
+.introduction.cloud-desk-intro {
   background: #28a1b5;
 }
 
-.introduction.cloud-software-intro:before {
+.introduction.cloud-desk-intro:before {
   display: none;
 }
 
