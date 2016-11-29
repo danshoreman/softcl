@@ -56,25 +56,9 @@
 		<div class="row">
 			<div class="small-12 medium-6 columns">
 				<?php the_field('service_title'); ?>
-<!--
-				<h4>Sanity as<br> a Service</h4>
-				
-				<p>Wouldn’t it be nice to have smart, self-sustaining services that look after themselves?</p>
-				
-				<p>You know, as if someone was doing all the tricky bits for you?</p>
-				
-				<p>...Hello!</p>
--->
 			</div>
 			<div class="small-12 medium-6 columns">
 				<?php the_field('service_list'); ?>
-<!--
-				<p>Development<br>as a Service</p>
-				<p>Disaster Recovery<br>as a Service</p>
-				<p>Analytics & Reporting<br>as a Service</p>
-				<p>Security<br>as a Service</p>
-				<p>Backup<br>as a Service</p>
--->
 			</div>
 		</div>
 	</div>
@@ -91,11 +75,20 @@
 					<?php while( have_rows('tools_used_logos') ): the_row(); 
 				
 						$toolsimg = wp_get_attachment_image_src(get_sub_field('tools_logo'), 'full');
+						$link = get_sub_field('tool_link');
 						
 						?>
 				
 						<li>
+							<?php if( $link ): ?>
+								<a href="<?php echo $link; ?>" target="_blank">
+							<?php endif; ?>
+							
 							<img src="<?php echo $toolsimg[0]; ?>" alt="">
+							
+							<?php if( $link ): ?>
+								</a>
+							<?php endif; ?>
 						</li>
 			
 						<?php endwhile; ?>

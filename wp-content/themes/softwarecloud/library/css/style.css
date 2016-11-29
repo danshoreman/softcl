@@ -1558,7 +1558,7 @@ body.advisory #trigger-overlay span:before {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0 1rem 1rem;
+  padding: 2rem;
   z-index: 1;
 }
 
@@ -2495,8 +2495,8 @@ body.advisory #trigger-overlay span:before {
   top: -50px;
   left: 0;
   width: 100%;
-  height: 50px;
-  background-image: url(../images/general/clouds-white.svg);
+  height: 70px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\a 	 viewBox='0 0 1440 181.5' xml:space='preserve'><g id='Rectangle_1_1_'>\a 	<path fill='#FFFFFF' d='M208.6,106.3c-25.9-17-56.8-26.8-90.1-26.8c-27.7,0-53.8,6.9-76.7,19C29.3,87.9,15.2,79.1,0,72.6v108.9\a 		h1440V72.6c-19.8-8.5-41.6-13.1-64.5-13.1c-64.1,0-119.7,36.7-146.8,90.3c-19.2-14.6-43.2-23.3-69.2-23.3\a 		c-39.7,0-74.7,20.2-95.2,50.9c-22.6-57.3-78.5-97.9-143.8-97.9c-41.6,0-79.3,16.4-107.1,43.2c-22.3-26.4-55.6-43.2-92.9-43.2\a 		c-52.9,0-98,33.9-114.6,81.1c-21.8-20.5-51.1-33.1-83.4-33.1c-14.5,0-28.4,2.5-41.2,7.2c-27.6-52.4-82.5-88.2-145.8-88.2\a 		C284.4,46.5,238.7,69.8,208.6,106.3z'/></g></svg>");
   background-position: left bottom;
   background-repeat: repeat-x;
   -webkit-background-size: cover;
@@ -2520,8 +2520,8 @@ body.advisory #trigger-overlay span:before {
     margin-bottom: 2rem;
   }
   .trust-panel:before {
-    top: -60px;
-    height: 60px;
+    top: -78px;
+    height: 80px;
   }
 }
 
@@ -2533,8 +2533,8 @@ body.advisory #trigger-overlay span:before {
     margin: 2rem 0;
   }
   .trust-panel:before {
-    top: -80px;
-    height: 80px;
+    top: -98px;
+    height: 100px;
   }
 }
 
@@ -2546,8 +2546,8 @@ body.advisory #trigger-overlay span:before {
     padding: 2rem 1rem 0 1rem;
   }
   .trust-panel:before {
-    top: -100px;
-    height: 100px;
+    top: -118px;
+    height: 120px;
   }
 }
 
@@ -2684,12 +2684,12 @@ body.advisory #trigger-overlay span:before {
 .testimonial-video {
   background: #ffffff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 48.063em) {
   .testimonial-video {
-    padding: 1rem 20%;
+    padding: 0 20%;
   }
 }
 
@@ -3035,11 +3035,11 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
 .introduction:before {
   content: '';
   position: absolute;
-  top: -48px;
+  top: -68px;
   left: 0;
   width: 100%;
-  height: 50px;
-  background-image: url(../images/general/cloud-pattern.png);
+  height: 70px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\a 	 viewBox='0 0 1440 181.5' xml:space='preserve'><g id='Rectangle_1_1_'>\a 	<path fill='#E65D33' d='M208.6,106.3c-25.9-17-56.8-26.8-90.1-26.8c-27.7,0-53.8,6.9-76.7,19C29.3,87.9,15.2,79.1,0,72.6v108.9\a 		h1440V72.6c-19.8-8.5-41.6-13.1-64.5-13.1c-64.1,0-119.7,36.7-146.8,90.3c-19.2-14.6-43.2-23.3-69.2-23.3\a 		c-39.7,0-74.7,20.2-95.2,50.9c-22.6-57.3-78.5-97.9-143.8-97.9c-41.6,0-79.3,16.4-107.1,43.2c-22.3-26.4-55.6-43.2-92.9-43.2\a 		c-52.9,0-98,33.9-114.6,81.1c-21.8-20.5-51.1-33.1-83.4-33.1c-14.5,0-28.4,2.5-41.2,7.2c-27.6-52.4-82.5-88.2-145.8-88.2\a 		C284.4,46.5,238.7,69.8,208.6,106.3z'/></g></svg>");
   background-position: left bottom;
   background-repeat: repeat-x;
   -webkit-background-size: cover;
@@ -3067,8 +3067,8 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
     font-size: 1.6rem;
   }
   .introduction:before {
-    top: -58px;
-    height: 60px;
+    top: -78px;
+    height: 80px;
   }
 }
 
@@ -3081,15 +3081,15 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
     font-size: 2.4rem;
   }
   .introduction:before {
-    top: -78px;
-    height: 80px;
+    top: -98px;
+    height: 100px;
   }
 }
 
 @media only screen and (min-width: 64.063em) {
   .introduction:before {
-    top: -98px;
-    height: 100px;
+    top: -118px;
+    height: 120px;
   }
 }
 
@@ -3186,7 +3186,7 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
 }
 
 .introduction.advisory-intro:before {
-  background-image: url(../images/general/cloud-pattern-beige.png);
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\a 		 viewBox='0 0 1440 181.5' xml:space='preserve'><g id='Rectangle_1_1_'>\a 		<path fill='#ecece7' d='M208.6,106.3c-25.9-17-56.8-26.8-90.1-26.8c-27.7,0-53.8,6.9-76.7,19C29.3,87.9,15.2,79.1,0,72.6v108.9\a 			h1440V72.6c-19.8-8.5-41.6-13.1-64.5-13.1c-64.1,0-119.7,36.7-146.8,90.3c-19.2-14.6-43.2-23.3-69.2-23.3\a 			c-39.7,0-74.7,20.2-95.2,50.9c-22.6-57.3-78.5-97.9-143.8-97.9c-41.6,0-79.3,16.4-107.1,43.2c-22.3-26.4-55.6-43.2-92.9-43.2\a 			c-52.9,0-98,33.9-114.6,81.1c-21.8-20.5-51.1-33.1-83.4-33.1c-14.5,0-28.4,2.5-41.2,7.2c-27.6-52.4-82.5-88.2-145.8-88.2\a 			C284.4,46.5,238.7,69.8,208.6,106.3z'/></g></svg>");
 }
 
 .introduction.cloud-desk-intro {
@@ -3372,11 +3372,11 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
 .contact-form:before {
   content: '';
   position: absolute;
-  top: -50px;
+  top: -68px;
   left: 0;
   width: 100%;
-  height: 50px;
-  background-image: url(../images/general/clouds-white.svg);
+  height: 70px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\a 		 viewBox='0 0 1440 181.5' xml:space='preserve'><g id='Rectangle_1_1_'>\a 		<path fill='#FFFFFF' d='M208.6,106.3c-25.9-17-56.8-26.8-90.1-26.8c-27.7,0-53.8,6.9-76.7,19C29.3,87.9,15.2,79.1,0,72.6v108.9\a 			h1440V72.6c-19.8-8.5-41.6-13.1-64.5-13.1c-64.1,0-119.7,36.7-146.8,90.3c-19.2-14.6-43.2-23.3-69.2-23.3\a 			c-39.7,0-74.7,20.2-95.2,50.9c-22.6-57.3-78.5-97.9-143.8-97.9c-41.6,0-79.3,16.4-107.1,43.2c-22.3-26.4-55.6-43.2-92.9-43.2\a 			c-52.9,0-98,33.9-114.6,81.1c-21.8-20.5-51.1-33.1-83.4-33.1c-14.5,0-28.4,2.5-41.2,7.2c-27.6-52.4-82.5-88.2-145.8-88.2\a 			C284.4,46.5,238.7,69.8,208.6,106.3z'/></g></svg>");
   background-position: left bottom;
   background-repeat: repeat-x;
   -webkit-background-size: cover;
@@ -3397,8 +3397,8 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
 
 @media only screen and (min-width: 670px) {
   .contact-form:before {
-    top: -60px;
-    height: 60px;
+    top: -78px;
+    height: 80px;
   }
 }
 
@@ -3407,15 +3407,15 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
     padding-top: 2rem;
   }
   .contact-form:before {
-    top: -80px;
-    height: 80px;
+    top: -98px;
+    height: 100px;
   }
 }
 
 @media only screen and (min-width: 64.063em) {
   .contact-form:before {
-    top: -100px;
-    height: 100px;
+    top: -118px;
+    height: 120px;
   }
 }
 
