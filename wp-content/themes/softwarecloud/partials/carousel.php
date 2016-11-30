@@ -1,6 +1,6 @@
 <?php if( have_rows('hero_content') ) : ?>
 
-  <section class="carousel" >
+	<section class="carousel" >
      
     <?php while ( have_rows('hero_content') ) : the_row(); ?>
 
@@ -19,14 +19,20 @@
 					</div>
 
         <?php elseif( get_row_layout() == 'video_background_layout' ) : ?>
-
-					<div class="carousel-slide">
+        
+        	<div class="carousel-slide">
+					
+						<div class="video-wrap">
+							<video id="theVideo" autoplay="autoplay" loop="loop" muted="" poster="" width="100%" height="100%">
+								<source src="<?php the_sub_field('background_video'); ?>" type="video/mp4" />
+							</video>
+						</div>
+					
 						<div class="carousel-inner">
 							<div class="row">
 								<div class="small-12 columns">
-									<?php the_sub_field('background_video'); ?>
-									<?php the_sub_field('video_overlay_text'); ?>
-								</div>
+									<?php /* the_sub_field('video_overlay_text'); */ ?>
+									</div>
 							</div>
 						</div>
 					</div>
