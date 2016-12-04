@@ -1,61 +1,18 @@
-	
-$(document).ready(function(){
-	
-	$('.carousel').slick({
-		dots: true,
-	  infinite: true,
-	  speed: 500,
-	  fade: false,
-	  arrows: false,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  autoplay: true,
-		autoplaySpeed: 1000
-	});
-	
-	/*
-	$('.sliderSidebar').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		asNavFor: '.sliderMain',
-		dots: false,
-		centerMode: false,
-		focusOnSelect: true,
-		vertical: true,
-		arrows: false
-	});
-*/
-	
-	$('.carousel').on('afterChange', function(event, slick, currentSlide){
-	  if (currentSlide == 2) {
-		$('.carousel').slick('slickPause');
-		theVideo.play();
-	  }
-	});
-	
-	document.getElementById('theVideo').addEventListener('ended',myHandler,false);
-	
-	function myHandler(e) {
-		$('.carousel').slick('slickPlay');
-	}	  	
-});
-
-
 
 (function($)	{
 	
+	// Hero background video mobile detect
+	if ($("#theVideo").length > 0) {
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+			$('#theVideo').hide();
+			$('.video-slide').addClass('video-no');
+		} else {
+			$('#theVideo').get(0).play();
+		}
+	}
+	
 	$(document).ready(function() {
 		
-		
-		// Nav
-		// Show and hide main nav on mobile
-		/*
-		$('#toggle').click(function(){
-			$('.main-menu').slideToggle('fast');
-		});
-*/
-		
-		/*
 		$('.carousel').slick({
 	    dots: true,
 		  infinite: true,
@@ -65,7 +22,6 @@ $(document).ready(function(){
 		  slidesToShow: 1,
 		  slidesToScroll: 1
 	  });
-*/
 
 		
 	  $('.partner-panel').slick({
@@ -138,9 +94,3 @@ $(document).ready(function(){
 	});
 
 })(jQuery);
-
-
-document.getElementById('myVideo').addEventListener('ended',myHandler,false);
-function myHandler(e) {
-    $('.sliderMain').slick('slickPlay');
-}

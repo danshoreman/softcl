@@ -1,10 +1,31 @@
 <?php if( have_rows('hero_content') ) : ?>
 
-	<section class="carousel" >
-     
+		<?php if( get_row_layout() == 'video_background_layout' ) : ?>
+		<section class="video-header">
+		<?php else : ?>
+		<section class="carousel">
+		<?php endif; ?>
+		
     <?php while ( have_rows('hero_content') ) : the_row(); ?>
 
-        <?php if( get_row_layout() == 'image_background_layout' ) : 
+        <?php if( get_row_layout() == 'video_background_layout' ) : 
+	        $bgimageposter = wp_get_attachment_image_src(get_sub_field('background_video_poster'), 'hero');
+        ?>
+        
+        	<style>
+					.video-no{background-image: url(<?php echo $bgimageposter[0]; ?>); background-size: cover;}
+					</style>
+	        
+					<div class="video-slide">
+						<div class="video-wrap">
+							<video id="theVideo" autoplay="autoplay" muted="" loop="loop" width="100%" height="100%">
+								<source src="<?php the_sub_field('background_video'); ?>" type="video/mp4" />
+							</video>
+						</div>
+					</div>
+	        
+					
+				<?php elseif( get_row_layout() == 'image_background_layout' ) : 
 	        
 	        $bgimage = wp_get_attachment_image_src(get_sub_field('background_image'), 'hero'); ?>
 
@@ -12,30 +33,12 @@
 						<div class="carousel-inner" <?php if($bgimage) : ?> style="background-image: url(<?php echo $bgimage[0]; ?>);" <?php endif; ?>>
 							<div class="row">
 								<div class="small-12 columns">
-									<?php the_sub_field('image_overlay_text'); ?>
+									<div class="carousel-text-block"><?php the_sub_field('image_overlay_text'); ?></div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-        <?php elseif( get_row_layout() == 'video_background_layout' ) : ?>
-        
-        	<div class="carousel-slide">
 					
-						<div class="video-wrap">
-							<video id="theVideo" autoplay="autoplay" loop="loop" muted="" poster="" width="100%" height="100%">
-								<source src="<?php the_sub_field('background_video'); ?>" type="video/mp4" />
-							</video>
-						</div>
-					
-						<div class="carousel-inner">
-							<div class="row">
-								<div class="small-12 columns">
-									<?php /* the_sub_field('video_overlay_text'); */ ?>
-									</div>
-							</div>
-						</div>
-					</div>
 
 				<?php elseif( get_row_layout() == 'logo_on_colour' ) : 
 					
@@ -60,5 +63,8 @@
   </section>
    
 <?php endif; ?>
+
+
+
 
 
