@@ -1,11 +1,22 @@
-<?php if( have_rows('hero_content') ) : ?>
 
-		<?php if( get_row_layout() == 'video_background_layout' ) : ?>
-		<section class="video-header">
-		<?php else : ?>
-		<section class="carousel">
-		<?php endif; ?>
+
+		<?php $video_content = false;
+		  if (have_rows('hero_content')) {
+		    while (have_rows('hero_content')) {
+		      the_row();
+		      if (get_row_layout() == 'video_background_layout') {
+		        $video_content = true;
+		      }
+		    }
+		  }
 		
+	  if ( $video_content ) : ?>
+	    <section class="video-header">
+	  <?php else : ?>
+	    <section class="carousel">
+	  <?php endif; ?>
+
+		<?php if( have_rows('hero_content') ) : ?>
     <?php while ( have_rows('hero_content') ) : the_row(); ?>
 
         <?php if( get_row_layout() == 'video_background_layout' ) : 
