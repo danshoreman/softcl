@@ -13,12 +13,12 @@
 		<?php if ($counter % 2 === 0) :?>
 			
 			<div class="two-col-inner">
-				<div class="colone">
+				<div class="colone os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
 					<div class="single-col-inner">
 						<?php echo $colone; ?>
 					</div>
 				</div>
-				<div class="coltwo">
+				<div class="coltwo os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 					<div class="single-col-inner">
 						<?php echo $coltwo; ?>
 					</div>
@@ -28,12 +28,12 @@
 		<?php else : ?>
 		
 			<div class="two-col-inner reversed">
-				<div class="colone">
+				<div class="colone os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 					<div class="single-col-inner">
 						<?php echo $colone; ?>
 					</div>
 				</div>
-				<div class="coltwo">
+				<div class="coltwo os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
 					<div class="single-col-inner">
 						<?php echo $coltwo; ?>
 					</div>

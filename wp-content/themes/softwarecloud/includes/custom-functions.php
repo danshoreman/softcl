@@ -15,11 +15,13 @@ function scripts_and_styles() {
 		
     
    	wp_register_script( 'modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+   	wp_register_script( 'waypoints', get_stylesheet_directory_uri() . '/library/js/libs/min/jquery.waypoints.min.js', array(), '4.0.1', false );
    	wp_register_script( 'slick', get_stylesheet_directory_uri() . '/library/js/libs/min/slick.min.js', array(), '1.6.0', true );
    	wp_register_script( 'classie', get_stylesheet_directory_uri() . '/library/js/classie.js', array(), '1.0.0', true );
    	wp_register_script( 'navscr', get_stylesheet_directory_uri() . '/library/js/nav.js', array(), '1.0.0', true );
 		wp_register_script( 'allscripts', get_stylesheet_directory_uri() . '/library/js/scripts.js', array(), '1.0.0', true );
 		wp_enqueue_script( 'modernizr' );
+		wp_enqueue_script( 'waypoints' );
 		wp_enqueue_script( 'classie' );
 		wp_enqueue_script( 'navscr' );
 		wp_enqueue_script( 'slick' );

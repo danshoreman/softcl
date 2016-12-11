@@ -11,14 +11,14 @@
 
 		<?php if ($counter % 2 === 0) :?>
 			<div class="two-col">
-				<div class="lcol">
+				<div class="lcol os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
 	
 					<div class="text-wrap">
 						<?php echo $rcol; ?>
 					</div>
 	
 				</div>
-				<div class="rcol">
+				<div class="rcol os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 	
 					<div class="text-wrap">
 						<?php echo $lcol; ?>
@@ -28,14 +28,14 @@
 			</div>
 		<?php else : ?>
 			<div class="two-col flipped">
-				<div class="lcol">
+				<div class="lcol os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 
 					<div class="text-wrap">
 						<?php echo $lcol; ?>
 					</div>
 					
 				</div>
-				<div class="rcol">
+				<div class="rcol os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
 					
 					<div class="text-wrap">
 						<?php echo $rcol; ?>

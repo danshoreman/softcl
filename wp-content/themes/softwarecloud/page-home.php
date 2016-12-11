@@ -12,7 +12,7 @@
 	$counter = 0;
 	if( have_rows('we_are_block') ): ?>
 
-	<div class="Row">
+	<div class="row">
 
 	<?php while( have_rows('we_are_block') ): the_row(); 
 		
@@ -26,23 +26,23 @@
 	
 			<div class="row">
 				<?php if ($counter % 2 === 0) :?>
-					<div class="small-12 medium-6 columns img-col">
+					<div class="small-12 medium-6 columns img-col os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
 		
 						<img src="<?php echo $imgcol[0]; ?>" alt="" class="">
 		
 					</div>
-					<div class="small-12 medium-6 columns">
+					<div class="small-12 medium-6 columns os-animation os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 		
 						<?php echo $rcol; ?>
 		
 					</div>
 				<?php else : ?>
-					<div class="small-12 medium-6 medium-push-6 columns img-col">
+					<div class="small-12 medium-6 medium-push-6 columns img-col os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 	
 						<img src="<?php echo $imgcol[0]; ?>" alt="" class="">
 	
 					</div>
-					<div class="small-12 medium-6 medium-pull-6 columns">
+					<div class="small-12 medium-6 medium-pull-6 columns os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
 		
 						<?php echo $rcol; ?>
 		

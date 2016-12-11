@@ -26,7 +26,7 @@
 		
 				?>
 		
-				<div class="small-12 medium-6 end columns cloud-info">
+				<div class="small-12 medium-6 end columns cloud-info os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
 	
 					<img src="<?php echo $cloudimg[0]; ?>" alt="">
 					<h4><?php echo $cloudtitle; ?></h4>
