@@ -52,6 +52,8 @@
 		</div>
 	</div>
 	
+	<?php if( get_field('service_title') ): ?>
+	
 	<div class="service-panel">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
@@ -62,6 +64,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<?php endif; ?>
 	
 	<div class="tools-used-panel">
 		<div class="row">

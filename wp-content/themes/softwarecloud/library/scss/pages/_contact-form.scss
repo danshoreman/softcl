@@ -66,3 +66,25 @@
 		}
 	}
 }
+
+.gform_confirmation_wrapper {
+	border: 1px solid grey;
+  background: white;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-top: 2rem;
+  text-align: center;
+  
+  @media only screen and (min-width: 64.063em) {
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: left;
+  }
+}
+
+.gform_validation_error{
+	
+	.validation_error{
+		text-align: left !important;
+	}
+}

@@ -38,6 +38,23 @@ add_action('wp_enqueue_scripts', 'scripts_and_styles', 999);
 /* Hide Admin Bar */
 show_admin_bar( false );
 
+add_filter('gform_validation_message', 'change_message', 10, 2);
+function change_message($message, $form){
+return '
+<div class="validation_error">Please add your details below.</div>
+';
+}
+
+add_filter( 'gform_field_validation', 'change_field_message', 10, 4 );
+function change_field_message($form, $field){
+return '
+<div class="gfield_description validation_message">Please fill out this field.</div>
+';
+}
+
+
+add_filter( 'gform_confirmation_anchor', '__return_true' );
+
 
 /**
  * add page slug to body class, if on a page

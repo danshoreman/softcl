@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php get_header(); 
+	
+	/* Template Name: Homepage */
+	
+?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -123,13 +127,18 @@
 						$tools_link = get_sub_field('tools_link'); ?>
 				
 						<div class="tool">
-				
-							<img src="<?php echo $imgcol[0]; ?>" alt="" />
+							
+							<?php if( $tools_link ): ?>
+								<a href="<?php echo $tools_link; ?>" target="_blank">
+							<?php endif; ?>
+									
+									<img src="<?php echo $imgcol[0]; ?>" alt="">
+									
+							<?php if( $tools_link ): ?>
+								</a>
+							<?php endif; ?>
 							
 							<p><?php echo $copy; ?></p>
-							<?php if( $tools_link ): ?>
-								<a class="btn btn-more" href="<?php echo $tools_link; ?>">Read More</a>
-							<?php endif; ?>
 				
 						</div>
 				
@@ -138,42 +147,6 @@
 					</div>
 				
 				<?php endif; ?>
-			
-			
-				<!--
-			<div class="tools-panel">
-				<div class="tool">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
-					<button class="btn btn-more">Read More</button>
-				</div>
-				<div class="tool">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
-					<button class="btn btn-more">Read More</button>
-				</div>
-				<div class="tool">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
-					<button class="btn btn-more">Read More</button>
-				</div>
-				<div class="tool">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
-					<button class="btn btn-more">Read More</button>
-				</div>
-				<div class="tool">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/home/microsoft-partner.png" alt="" class="">
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris pharetra, sollicitudin erat non, posuere lectus. Cras laoreet risus enim.</p>
-					<button class="btn btn-more">Read More</button>
-				</div>
-			</div>
--->
 		</div>
 	</div>
 	

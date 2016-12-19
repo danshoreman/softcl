@@ -1,17 +1,18 @@
 
 (function($)	{
 	
-	// Hero background video mobile detect
-	if ($("#theVideo").length > 0) {
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-			$('#theVideo').hide();
-			$('.video-slide').addClass('video-no');
-		} else {
-			$('#theVideo').get(0).play();
-		}
-	}
-	
 	$(document).ready(function() {
+		
+		
+		function scrollBanner() {
+		  $(document).scroll(function(){
+		  	var scrollPos = $(this).scrollTop();
+		  	$('.scroll-text').css({
+		  	  'opacity' : 1-(scrollPos/250)
+		  	});
+		  });    
+		}
+		scrollBanner();
 		
 		
 		// Slick Slider for carousel
@@ -125,3 +126,4 @@
 	});
 
 })(jQuery);
+

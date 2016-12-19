@@ -6,7 +6,7 @@
 	overflow: hidden;
 }
 
-#theVideo{
+.video-wrap video{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -48,6 +48,14 @@
 	}	
 }
 
+
+.carousel-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}
 
 .carousel{
 
@@ -154,16 +162,7 @@
 			
 			.carousel-inner{
 				height: 700px;
-			
-/*
-				h1{
-					font-size: 3.4rem;
-					width: 480px;
-					position: absolute;
-					left: 40%;
-					top: 50px;
-				}
-*/
+				
 				.carousel-text-block{
 					position: absolute;
 					left: 40%;
@@ -211,7 +210,7 @@
 	
 	.slick-dots{
 		bottom: 100px;
-		z-index: 2;
+		z-index: 1000;
 		
 		li{
 			
@@ -226,6 +225,10 @@
 				}
 			}
 		}
+		
+		@media only screen and (min-width: 64.063em) {
+			bottom: 120px;
+		}
 	}
 	
 	#video-bg{
@@ -239,6 +242,34 @@
 		transform: translate(-50%, -25%);
 	}
 }
+
+.main-content{
+	position: relative;
+	top: 500px;
+	background: $white;
+	
+	
+	@media only screen and (min-width: 40.063em) {
+		
+		top: 550px;
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+			
+		top: 600px;
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+		
+		top: 700px;
+	}
+	
+	@media only screen and (min-width: 90.063em) {
+			
+		top: 850px;
+	}
+}
+
 
 body.advisory{
 	

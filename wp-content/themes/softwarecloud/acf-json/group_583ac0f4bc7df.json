@@ -3,69 +3,13 @@
     "title": "Hero Panel",
     "fields": [
         {
-            "key": "field_583ac1188742d",
-            "label": "Hero Content",
-            "name": "hero_content",
-            "type": "flexible_content",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "button_label": "Add Row",
-            "min": "",
-            "max": "",
             "layouts": [
                 {
                     "key": "583ac2fa87430",
                     "name": "video_background_layout",
-                    "label": "Video Background Layout",
+                    "label": "Video Background Layout (Upload video in 'Video Background' panel)",
                     "display": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_583ac30987431",
-                            "label": "Background Video",
-                            "name": "background_video",
-                            "type": "url",
-                            "instructions": "Video should be hosted on Vimeo and the video source url pasted in here.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_58444d051a5f5",
-                            "label": "Background Video Poster",
-                            "name": "background_video_poster",
-                            "type": "image",
-                            "instructions": "The image that will be displayed until the video has loaded.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -76,6 +20,16 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "return_format": "id",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
                             "key": "field_583ac1f08742e",
                             "label": "Background Image",
                             "name": "background_image",
@@ -87,19 +41,14 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
+                            }
                         },
                         {
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "default_value": "",
+                            "delay": 0,
                             "key": "field_583ac2b18742f",
                             "label": "Image Overlay Text",
                             "name": "image_overlay_text",
@@ -111,11 +60,7 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1
+                            }
                         }
                     ],
                     "min": "",
@@ -128,6 +73,7 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "default_value": "#e65d33",
                             "key": "field_583ac38f87434",
                             "label": "Background colour",
                             "name": "background_colour",
@@ -139,10 +85,19 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": "#e65d33"
+                            }
                         },
                         {
+                            "return_format": "id",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
                             "key": "field_583ac3c187435",
                             "label": "Logo",
                             "name": "logo",
@@ -154,23 +109,28 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
+                            }
                         }
                     ],
                     "min": "",
                     "max": ""
                 }
-            ]
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Row",
+            "key": "field_583ac1188742d",
+            "label": "Hero Content",
+            "name": "hero_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
         }
     ],
     "location": [
@@ -260,5 +220,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1480871510
+    "modified": 1481836591
 }
