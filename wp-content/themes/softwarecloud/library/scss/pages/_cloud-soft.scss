@@ -1,9 +1,11 @@
 .what-you-get-panel{
 	padding-bottom: 2rem;
+	background: #28a1b5;
 	
 	h2{
 		font-size: 2rem;
 		text-align: center;
+		color: $white;
 	}
 	
 	.what-you-get{
@@ -24,10 +26,12 @@
 				margin: 0;
 				font-size: 2rem;
 				line-height: 1;
+				color: $white;
 			}
 			
 			p{
 				margin-top: 0;
+				color: $white;
 			}
 		}
 	}

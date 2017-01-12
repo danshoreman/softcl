@@ -2972,11 +2972,13 @@ body.advisory #trigger-overlay span:before {
 
 .what-you-get-panel {
   padding-bottom: 2rem;
+  background: #28a1b5;
 }
 
 .what-you-get-panel h2 {
   font-size: 2rem;
   text-align: center;
+  color: #ffffff;
 }
 
 .what-you-get-panel .what-you-get {
@@ -2999,10 +3001,12 @@ body.advisory #trigger-overlay span:before {
   margin: 0;
   font-size: 2rem;
   line-height: 1;
+  color: #ffffff;
 }
 
 .what-you-get-panel .what-you-get .wyg-item p {
   margin-top: 0;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 48.063em) {
@@ -3533,11 +3537,15 @@ body.advisory .carousel .carousel-slide .carousel-logo img {
 }
 
 .introduction.cloud-desk-intro {
-  background: #28a1b5;
+  background: #ffffff;
+}
+
+.introduction.cloud-desk-intro h2, .introduction.cloud-desk-intro p {
+  color: #28a1b5;
 }
 
 .introduction.cloud-desk-intro:before {
-  display: none;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'\a 		 viewBox='0 0 1440 181.5' xml:space='preserve'><g id='Rectangle_1_1_'>\a 		<path fill='#FFFFFF' d='M208.6,106.3c-25.9-17-56.8-26.8-90.1-26.8c-27.7,0-53.8,6.9-76.7,19C29.3,87.9,15.2,79.1,0,72.6v108.9\a 			h1440V72.6c-19.8-8.5-41.6-13.1-64.5-13.1c-64.1,0-119.7,36.7-146.8,90.3c-19.2-14.6-43.2-23.3-69.2-23.3\a 			c-39.7,0-74.7,20.2-95.2,50.9c-22.6-57.3-78.5-97.9-143.8-97.9c-41.6,0-79.3,16.4-107.1,43.2c-22.3-26.4-55.6-43.2-92.9-43.2\a 			c-52.9,0-98,33.9-114.6,81.1c-21.8-20.5-51.1-33.1-83.4-33.1c-14.5,0-28.4,2.5-41.2,7.2c-27.6-52.4-82.5-88.2-145.8-88.2\a 			C284.4,46.5,238.7,69.8,208.6,106.3z'/></g></svg>");
 }
 
 .two-col-main {

@@ -45,13 +45,6 @@ return '
 ';
 }
 
-add_filter( 'gform_field_validation', 'change_field_message', 10, 4 );
-function change_field_message($form, $field){
-return '
-<div class="gfield_description validation_message">Please fill out this field.</div>
-';
-}
-
 
 add_filter( 'gform_confirmation_anchor', '__return_true' );
 
