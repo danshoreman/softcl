@@ -18,6 +18,100 @@
 }
 
 
+.header-contacts{
+	
+	.header-contacts-icon{
+		position: absolute;
+		cursor: pointer;
+    color: #e7e6e6;
+    top: 42px;
+    right: 80px;
+    height: 25px;
+    width: 20px;
+    display: block;
+		background: url(../images/general/contact-details.png) center center no-repeat;
+		@include back-size(contain);
+		
+		span{
+			display: none;
+		}
+	}
+	
+	.header-contacts-details{
+		background: $white;
+    padding: 0.5rem 0.7rem;
+    position: absolute;
+    right: 30px;
+    @include box-shadow(0, 0, 15px, #ccc);
+    @include border-radius();
+//	display: none;
+
+		a{
+			text-decoration: none;
+		}
+
+		&:before{
+			right: 50px;
+	    top: -10px;
+	    position: absolute;
+	    content: '';
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 0 10px 10px 10px;
+	    border-color: transparent transparent $white transparent;
+		}
+	}
+}
+
+.single-header{
+	height: 500px;
+	background-position: center center;
+	
+	@media only screen and (min-width: 40.063em) {
+		
+		height: 550px;
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		height: 600px;
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+		
+		height: 700px;
+	}
+	
+	@media only screen and (min-width: 90.063em) {
+		
+		height: 850px;
+	}
+}
+
+.search .search-results .page-header,
+.archive .page-header{
+		position: relative;
+		background: #f5f5f5;
+}
+
+.sidebar{
+	
+	@media only screen and (min-width: 40.063em) {
+		
+		margin-top: 2rem;		
+	}
+}
+
+.single-title{
+	line-height: 1.2;
+	
+	@media only screen and (min-width: 48.063em) {
+		margin: 2rem 0;	
+	}
+}
+
+
 
 
 
@@ -35,9 +129,33 @@
 			
 			img{
 				width: 100px;
-				}
 			}
 		}
+	}
+	
+	.header-contacts{
+	
+		.header-contacts-icon{
+			top: 42px;
+	    right: 320px;
+	    height: 25px;
+	    width: 20px;
+	  }
+		
+		.header-contacts-details{
+			background: transparent;
+	    padding: 0;
+	    display: inline-block;
+	    right: 90px;
+	    top: 42px;
+	    @include box-shadow(0, 0, 0, transparent);
+	    @include border-radius(0);
+	
+			&:before{
+				display: none;
+			}
+		}
+	}	
 }
 
 /* min-width 1025px */

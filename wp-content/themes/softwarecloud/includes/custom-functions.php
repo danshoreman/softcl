@@ -22,7 +22,7 @@ function scripts_and_styles() {
 		wp_register_script( 'allscripts', get_stylesheet_directory_uri() . '/library/js/scripts.js', array(), '1.0.0', true );
 		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'waypoints' );
-		wp_enqueue_script( 'classie' );
+		//wp_enqueue_script( 'classie' );
 		wp_enqueue_script( 'navscr' );
 		wp_enqueue_script( 'slick' );
 		wp_enqueue_script( 'allscripts' );

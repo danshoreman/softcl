@@ -53,6 +53,12 @@
 		<?php else : ?>
 		<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/software-cloud.svg" alt="Software Cloud"></a>
 		<?php endif; ?>
+		<div class="header-contacts">
+			<span class="header-contacts-icon"><span>Contacts</span></span>
+			<div class="header-contacts-details"><a href="mailto:info@softcl.com">info@softcl.com</a> | <span>01132 456 789</span></div>
+			
+			
+		</div>
 		<div id="trigger-overlay"><span></span></div>
 
 	</header>
